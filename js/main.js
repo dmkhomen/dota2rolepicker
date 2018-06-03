@@ -66,7 +66,7 @@ function mycallback(data) {
     for (i in heroes) {
         var item = '<div data-id="' + heroes[i].id +
             '" data-toggle="tooltip" data-placement="bottom" title="' +
-            heroes[i].localized_name + '" class="hero"><img src="//cdn.dota2.com/apps/dota2/images/heroes/' +
+            heroes[i].localized_name + '" class="hero"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/' +
             heroes[i].name.substr(14, heroes[i].name.length) + '_lg.png"><i class="favorite-star fas fa-star"></i><i class="favorite-star far fa-star"></i></div>';
         if (heroes[i].attribute == 'str') {
             txt_str += item;
