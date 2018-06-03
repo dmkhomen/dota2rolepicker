@@ -10,7 +10,6 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
 
@@ -19,39 +18,34 @@
     <div id="wrapper">
 
         <div id="header">Dota 2 Hero Role Picker</div>
-        <div id="controls">
-                <select class="selector" id="role-selector">
-                    <option value="all">All Roles</option>
-                    <option value="1">1 pos. Hard Carry</option>
-                    <option value="2">2 pos. Mid Lane</option>
-                    <option value="3">3 pos. Offlane</option>
-                    <option value="4">4 pos. Farming Support</option>
-                    <option value="6">4 pos. Jungler</option>
-                    <option value="5">5 pos. Hard Support</option>
-                </select>
-    
-                <select class="selector" id="range-selector">
-                    <option value="all">All Attack Ranges</option>
-                    <option value="0">Melee Heroes</option>
-                    <option value="1">Range Heroes</option>
-                </select>
-                <select class="selector" id="damage-selector">
-                    <option value="all">All Damage Types</option>
-                    <option value="0">Physical</option>
-                    <option value="1">Magical / Pure</option>
-                </select>
-    
-    
-                <!-- <span class="fav-explanation">Favorites</span> -->
-                <div class="toggle">
-                    <input class="selector" id="favorites-selector" type="checkbox">
-                    <label for="favorites-selector">Favorites</label>
-                </div>
-    
-    
-            </div>
-        <div id="content">
 
+        <div id="controls">
+            <select class="selector" id="role-selector">
+                <option value="all">All Roles</option>
+                <option value="1">1 pos. Hard Carry</option>
+                <option value="2">2 pos. Mid Lane</option>
+                <option value="3">3 pos. Offlane</option>
+                <option value="4">4 pos. Farming Support</option>
+                <option value="6">4 pos. Jungler</option>
+                <option value="5">5 pos. Hard Support</option>
+            </select>
+            <select class="selector" id="range-selector">
+                <option value="all">All Attack Ranges</option>
+                <option value="0">Melee Heroes</option>
+                <option value="1">Range Heroes</option>
+            </select>
+            <select class="selector" id="damage-selector">
+                <option value="all">All Damage Types</option>
+                <option value="0">Physical</option>
+                <option value="1">Magical / Pure</option>
+            </select>
+            <div class="toggle">
+                <input class="selector" id="favorites-selector" type="checkbox">
+                <label for="favorites-selector">Favorites</label>
+            </div>
+        </div>
+
+        <div id="content">
             <div class="hero-section">
                 <div class="hero-section__header">
                     <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_str.png" alt=""> Strength</div>
@@ -68,21 +62,11 @@
                 <div class="hero-section__container" id="demo_int"></div>
             </div>
         </div>
-        <p>Tired of panicking having only 30 seconds to pick and being overwhelmed by 115 possible choices? The Dota 2 Hero Role Picker is here to help you! Narrow your choice variation to most suitable heroes in just a couple of clicks. Feel free to use dropdowns to filter heroes by their farm dependency, attack range and main damage type. Add specific heroes to favorites by clicking on their portraits, then use "FAVORITES" switch to check them out.</p> 
-        
+        <p>Tired of panicking having only 30 seconds to pick and being overwhelmed by 115 possible choices? The Dota 2 Hero
+            Role Picker is here to help you! Narrow your choice variation to most suitable heroes in just a couple of clicks.
+            Feel free to use dropdowns to filter heroes by their farm dependency, attack range and main damage type. Add
+            specific heroes to favorites by clicking on their portraits, then use "FAVORITES" switch to check them out.</p>
     </div>
-
-
-
-
-
-
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script> -->
 
     <script src="js/main.js"></script>
 
