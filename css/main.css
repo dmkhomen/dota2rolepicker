@@ -66,12 +66,12 @@ body {
 select {
     padding: 10px;
     font-size: 16px;
-    background-color: #2a2c2d;
-    border-top: solid #363939 2px;
-    border-left: solid #363939 2px;
-    border-bottom: solid #1b1e1e 2px;
-    border-right: solid #1b1e1e 2px;
-    color: #999999;
+    background-color: #666;
+    border-top: solid #777 2px;
+    border-left: solid #777 2px;
+    border-bottom: solid #555 2px;
+    border-right: solid #555 2px;
+    color: #ccc;
     text-transform: uppercase;
     background-image: url("../img/asfalt-dark.png");
 }
@@ -116,12 +116,12 @@ select:focus {
 }
 .toggle {
     font-size: 16px;
-    background-color: #2a2c2d;
-    border-top: solid #363939 2px;
-    border-left: solid #363939 2px;
-    border-bottom: solid #1b1e1e 2px;
-    border-right: solid #1b1e1e 2px;
-    color: #999999;
+    background-color: #666;
+    border-top: solid #777 2px;
+    border-left: solid #777 2px;
+    border-bottom: solid #555 2px;
+    border-right: solid #555 2px;
+    color: #ccc;
     height: 47px;
     text-transform: uppercase;
     background-image: url("../img/asfalt-dark.png");
@@ -139,14 +139,14 @@ select:focus {
     display: block;
     height: 18px;
     width: 36px;
-    border: 1px solid #222;
+    /* border: 1px solid #222; */
     border-radius: 9px;
     position: absolute;
     top: calc(50% - 9px);
     right: 16px;
-    background-color: #222;
+    background-color: #333;
     background-image: url("../img/asfalt-dark.png");
-    box-shadow: -1px -1px 0px black;
+    box-shadow: 2px 2px 2px black inset;
 }
 .toggle input[type="checkbox"]+label::after {
     content: " ";
@@ -157,7 +157,7 @@ select:focus {
     position: absolute;
     top: calc(50% - 12px);
     right: 36px;
-    background: #999;
+    background: #ccc;
     transition: all 0.3s ease-in;
 }
 .toggle input[type="checkbox"]:checked+label::after {

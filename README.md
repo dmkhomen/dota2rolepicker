@@ -1,7 +1,7 @@
 # Dota 2 Hero Role Picker
 
 ## Description
-Tired of panicking having only 30 seconds to pick and being overwhelmed by 115 possible choices? The Dota 2 Hero Role Picker is here to help you! Narrow your choice variation to most suitable heroes in just a couple of clicks. Feel free to use dropdowns to filter heroes by their farm dependency, attack range and main damage type. Add specific heroes to favorites by clicking on their portraits, then use "FAVORITES" switch to check them out.
+This is a tool to help pick hero during strategy time. Use: filter needed role, check out what damage type is needed (seek to balance physical and magical damage in your team), try to get melee-range pairs as core-supports on laning phase, filter by your favorite heroes if needed (you have to add them by clicking on portrait).
 
 ## Controls
 ### Farm dependency
