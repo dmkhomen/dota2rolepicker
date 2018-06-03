@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+body {
+    background-color: #000;
+    color: #fff;
+}
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+}
+#header {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: Cinzel, serif;
+    color: #ccc;
+    background-image: linear-gradient(#ccc 28%, rgb(77, 77, 77) 40%, #ccc 54%);
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#content {
+    display: flex;
+    flex-direction: row;
+}
+#controls {
+    display: flex;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hero-section {
+    flex: 1;
+    padding: 5px;
+}
+.hero-section__header {
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    color: #999;
+}
+.hero-section__header img {
+    margin-right: 10px;
+}
+.hero-section__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.hero {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    transition: opacity 0.4s ease-in;
+}
+.hero img {
+    border: 1px solid black;
+    max-width: 100%;
+}
+.hero-name {
+    display: none;
+}
+select {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2a2c2d;
+    border-top: solid #363939 2px;
+    border-left: solid #363939 2px;
+    border-bottom: solid #1b1e1e 2px;
+    border-right: solid #1b1e1e 2px;
+    color: #999999;
+    text-transform: uppercase;
+    background-image: url("../img/asfalt-dark.png");
+}
+select:focus {
+    outline: #fff;
+}
+.lighten {
+    opacity: 1;
+}
+.darken {
+    opacity: 0.15;
+}
+.hero:hover {
+    opacity: 1;
+    transition: opacity 0.4s;
+    cursor: pointer;
+}
+
+.favorite img {
+    border: 1px solid goldenrod;
+}
+.favorite-star {
+    position: absolute;
+    font-size: 12px;
+    bottom: 4px;
+    right: 4px;
+    opacity: 0;
+    color: goldenrod;
+}
+.favorite .favorite-star.fas {
+    opacity: 1;
+}
+
+.hero:hover .favorite-star.far {
+    opacity: 1;
+}
+.toggle {
+    display: inline-block;
+}
+.toggle input[type="checkbox"] {
+    display: none;
+}
+.toggle {
+    font-size: 16px;
+    background-color: #2a2c2d;
+    border-top: solid #363939 2px;
+    border-left: solid #363939 2px;
+    border-bottom: solid #1b1e1e 2px;
+    border-right: solid #1b1e1e 2px;
+    color: #999999;
+    height: 47px;
+    text-transform: uppercase;
+    background-image: url("../img/asfalt-dark.png");
+}
+.toggle label {
+    display: inline-block;
+    margin-bottom: 0;
+    position: relative;
+    width: 160px;
+    text-align: left;
+    padding: 10px;
+}
+.toggle input[type="checkbox"]+label::before {
+    content: " ";
+    display: block;
+    height: 18px;
+    width: 36px;
+    border: 1px solid #222;
+    border-radius: 9px;
+    position: absolute;
+    top: calc(50% - 9px);
+    right: 16px;
+    background-color: #222;
+    background-image: url("../img/asfalt-dark.png");
+    box-shadow: -1px -1px 0px black;
+}
+.toggle input[type="checkbox"]+label::after {
+    content: " ";
+    display: block;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 36px;
+    background: #999;
+    transition: all 0.3s ease-in;
+}
+.toggle input[type="checkbox"]:checked+label::after {
+    right: 12px;
+    transition: all 0.3s ease-in;
+    background: goldenrod;
+    box-shadow: 0px 0px 30px gold;
+}
+p {
+    color: #999;
+    margin: 10px 0 0;
+}
