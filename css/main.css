@@ -54,7 +54,7 @@ body {
     position: relative;
     display: inline-block;
     width: 25%;
-    transition: opacity 0.4s ease-in;
+    transition: opacity 0.4s ease-in-out;
 }
 .hero img {
     border: 1px solid black;
@@ -139,7 +139,6 @@ select:focus {
     display: block;
     height: 18px;
     width: 36px;
-    /* border: 1px solid #222; */
     border-radius: 9px;
     position: absolute;
     top: calc(50% - 9px);
@@ -151,18 +150,18 @@ select:focus {
 .toggle input[type="checkbox"]+label::after {
     content: " ";
     display: block;
-    height: 24px;
-    width: 24px;
+    height: 18px;
+    width: 18px;
     border-radius: 50%;
     position: absolute;
-    top: calc(50% - 12px);
-    right: 36px;
+    top: calc(50% - 9px);
+    right: 34px;
     background: #ccc;
-    transition: all 0.3s ease-in;
+    transition: all 0.4s ease-in-out;
 }
 .toggle input[type="checkbox"]:checked+label::after {
-    right: 12px;
-    transition: all 0.3s ease-in;
+    right: 16px;
+    transition: all 0.4s ease-in-out;
     background: goldenrod;
     box-shadow: 0px 0px 30px gold;
 }
