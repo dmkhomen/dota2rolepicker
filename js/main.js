@@ -23,7 +23,7 @@ function setCookie(name, value, expirationDays) {
     document.cookie = name + "=" + value + "; " + expires + "; path=/";
 }
 
-//function to set cookie (used to get favorite heroes from cookie)
+//function to get cookie (used to get favorite heroes from cookie)
 function getCookie(cookieName) {
     var name = cookieName + "=";
     var cookieArray = document.cookie.split(';');
