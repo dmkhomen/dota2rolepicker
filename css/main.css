@@ -3,6 +3,7 @@ body {
     background-color: #000;
     color: #fff;
 }
+
 #wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -12,6 +13,7 @@ body {
     align-items: center;
     padding-top: 5vh;
 }
+
 #header {
     font-size: 48px;
     text-transform: uppercase;
@@ -22,47 +24,57 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 #content {
     display: flex;
     flex-direction: row;
 }
+
 #controls {
     display: flex;
     margin-top: 24px;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .hero-section {
     flex: 1;
     padding: 5px;
 }
+
 .hero-section__header {
     text-align: center;
     margin: 20px 0;
     text-transform: uppercase;
     color: #999;
 }
+
 .hero-section__header img {
     margin-right: 10px;
 }
+
 .hero-section__container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .hero {
     position: relative;
     display: inline-block;
     width: 25%;
     transition: opacity 0.4s ease-in-out;
 }
+
 .hero img {
     border: 1px solid black;
     max-width: 100%;
 }
+
 .hero-name {
     display: none;
 }
+
 select {
     padding: 10px;
     font-size: 16px;
@@ -75,15 +87,19 @@ select {
     text-transform: uppercase;
     background-image: url("../img/asfalt-dark.png");
 }
+
 select:focus {
     outline: #fff;
 }
+
 .lighten {
     opacity: 1;
 }
+
 .darken {
     opacity: 0.15;
 }
+
 .hero:hover {
     opacity: 1;
     transition: opacity 0.4s;
@@ -93,6 +109,7 @@ select:focus {
 .favorite img {
     border: 1px solid goldenrod;
 }
+
 .favorite-star {
     position: absolute;
     font-size: 12px;
@@ -101,6 +118,7 @@ select:focus {
     opacity: 0;
     color: goldenrod;
 }
+
 .favorite .favorite-star.fas {
     opacity: 1;
 }
@@ -108,12 +126,15 @@ select:focus {
 .hero:hover .favorite-star.far {
     opacity: 1;
 }
+
 .toggle {
     display: inline-block;
 }
+
 .toggle input[type="checkbox"] {
     display: none;
 }
+
 .toggle {
     font-size: 16px;
     background-color: #666;
@@ -126,14 +147,16 @@ select:focus {
     text-transform: uppercase;
     background-image: url("../img/asfalt-dark.png");
 }
+
 .toggle label {
     display: inline-block;
     margin-bottom: 0;
     position: relative;
-    width: 160px;
+    width: 176px;
     text-align: left;
     padding: 10px;
 }
+
 .toggle input[type="checkbox"]+label::before {
     content: " ";
     display: block;
@@ -147,6 +170,7 @@ select:focus {
     background-image: url("../img/asfalt-dark.png");
     box-shadow: 2px 2px 2px black inset;
 }
+
 .toggle input[type="checkbox"]+label::after {
     content: " ";
     display: block;
@@ -156,16 +180,28 @@ select:focus {
     position: absolute;
     top: calc(50% - 9px);
     right: 34px;
-    background: #ccc;
+    background: rgb(204, 204, 204);
     transition: all 0.4s ease-in-out;
 }
+
 .toggle input[type="checkbox"]:checked+label::after {
     right: 16px;
     transition: all 0.4s ease-in-out;
-    background: goldenrod;
+    background: rgb(218, 165, 32);
     box-shadow: 0px 0px 30px gold;
 }
+
 p {
     color: #999;
     margin: 10px 0 0;
+}
+
+#total-favorites {
+    color: rgb(204, 204, 204);
+    transition: all 0.4s ease-in-out;
+}
+
+#total-favorites.enabled {
+    color: rgb(218, 165, 32);
+    transition: all 0.4s ease-in-out;
 }

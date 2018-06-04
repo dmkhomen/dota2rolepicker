@@ -11,8 +11,8 @@ function hasInside(array, item) {
 }
 
 //check if element has specific class
-function hasClass(element, className) {
-    return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;
+function hasClass(element, classSearched) {
+    return (' ' + element.className + ' ').indexOf(' ' + classSearched + ' ') > -1;
 }
 
 //function to set cookie (used to save favorite heroes)
@@ -80,11 +80,13 @@ function mycallback(data) {
     document.getElementById("demo_str").innerHTML = txt_str;
     document.getElementById("demo_agi").innerHTML = txt_agi;
     document.getElementById("demo_int").innerHTML = txt_int;
-    
 
-    
+
+
     //favorite heroes processing, if cookie exists, get values from it and add css class to favorite heroes in list
-    var favorites = []; 
+    var favorites = [];
+    var totalFavorites;
+    var totalFavoritesSpan = document.getElementById("total-favorites");
     var items = document.querySelectorAll(".hero");
 
     if (getCookie("favs")) {
@@ -95,9 +97,13 @@ function mycallback(data) {
                 items[i].classList.add("favorite");
             }
         }
+        totalFavorites = favorites.length;
+        console.log(totalFavorites);
+        totalFavoritesSpan.innerHTML = "(" + totalFavorites + ")";
     }
 
     //update favorites and cookie on hero clicking
+    //todo visualize number of favorite heroes
     for (var i = 0; i < items.length; i++) {
         items[i].addEventListener('click', function () {
             var id = this.getAttribute("data-id");
@@ -108,8 +114,12 @@ function mycallback(data) {
                 var index = favorites.indexOf(id);
                 favorites.splice(index, 1);
                 this.classList.remove("favorite");
-
             }
+            totalFavorites = favorites.length;
+            console.log(totalFavorites);
+            totalFavoritesSpan.innerHTML = "(" + totalFavorites + ")";
+            // totalFavoritesSpan.classList
+
             var favoritesCookie = JSON.stringify(favorites);
             setCookie("favs", favoritesCookie, 365);
         }, false);
@@ -130,6 +140,11 @@ function mycallback(data) {
         var rangeSelected = document.getElementById("range-selector").value;
         var damageSelected = document.getElementById("damage-selector").value;
         var favoritesSelected = document.querySelector('#favorites-selector').checked;
+        if (favoritesSelected) {
+            totalFavoritesSpan.classList.add("enabled");
+        } else {
+            totalFavoritesSpan.classList.remove("enabled");
+        }
 
         //array contains id's of heroes that pass filter
         var affected = [];
