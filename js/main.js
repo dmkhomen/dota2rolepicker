@@ -191,6 +191,10 @@ function mycallback(data) {
     var aoesplashSelected = 'all';
     var roamerSelected = 'all';
     var initiatorSelected = 'all';
+    var disablerSelected = 'all';
+    var nukerSelected = 'all';
+    var pusherSelected = 'all';
+    var durableSelected = 'all';
     var favoritesSelected = false;
 
     function selectHeroes2() {
@@ -292,6 +296,50 @@ function mycallback(data) {
                 }
                 // rangeSelected = value;
                 break;
+            case 'disabler':
+                if (alreadySelected) {
+                    disablerSelected = 'all';
+                    this.classList.remove("selected");
+                } else {
+                    disablerSelected = value;
+                    this.classList.add("selected");
+                    // remove = true;
+                }
+                // rangeSelected = value;
+                break;
+            case 'nuker':
+                if (alreadySelected) {
+                    nukerSelected = 'all';
+                    this.classList.remove("selected");
+                } else {
+                    nukerSelected = value;
+                    this.classList.add("selected");
+                    // remove = true;
+                }
+                // rangeSelected = value;
+                break;
+            case 'pusher':
+                if (alreadySelected) {
+                    pusherSelected = 'all';
+                    this.classList.remove("selected");
+                } else {
+                    pusherSelected = value;
+                    this.classList.add("selected");
+                    // remove = true;
+                }
+                // rangeSelected = value;
+                break;
+            case 'durable':
+                if (alreadySelected) {
+                    durableSelected = 'all';
+                    this.classList.remove("selected");
+                } else {
+                    durableSelected = value;
+                    this.classList.add("selected");
+                    // remove = true;
+                }
+                // rangeSelected = value;
+                break;
         }
         // console.log(attribute + ', ' + value);
         //kill class on all elements
@@ -315,6 +363,10 @@ function mycallback(data) {
                 (aoesplashSelected == 'all' || heroes[i].aoesplash) &&
                 (roamerSelected == 'all' || heroes[i].roamer) &&
                 (initiatorSelected == 'all' || heroes[i].initiator) &&
+                (disablerSelected == 'all' || heroes[i].disabler) &&
+                (nukerSelected == 'all' || heroes[i].nuker) &&
+                (pusherSelected == 'all' || heroes[i].pusher) &&
+                (durableSelected == 'all' || heroes[i].durable) &&
                 (favoritesSelected == false || hasInside(favorites, heroes[i].id.toString()))
             ) {
                 affected.push(heroes[i].id);

@@ -16,15 +16,18 @@
         "damage": [1],
         "aoesplash": 1,
         "initiator": 1,
+        "disabler": 1,
+        "durable": 1,
         "localized_name": "Axe"
     },
     {
         "name": "npc_dota_hero_bane",
         "id": 3,
         "attribute": "int",
-        "roles": [4, 5],
+        "roles": [3, 5],
         "range": [1],
         "damage": [1],
+        "disabler": 1,
         "localized_name": "Bane"
     },
     {
@@ -44,6 +47,7 @@
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
+        "disabler": 1,
         "localized_name": "CrystalMaiden"
     },
     {
@@ -60,12 +64,13 @@
         "name": "npc_dota_hero_earthshaker",
         "id": 7,
         "attribute": "str",
-        "roles": [3, 4],
+        "roles": [3, 5],
         "range": [0],
         "damage": [1],
         "aoesplash": 1,
         "roamer": 1,
         "initiator": 1,
+        "disabler": 1,
         "localized_name": "Earthshaker"
     },
     {
@@ -81,7 +86,7 @@
         "name": "npc_dota_hero_mirana",
         "id": 9,
         "attribute": "agi",
-        "roles": [2, 3, 4],
+        "roles": [2, 3, 5],
         "range": [1],
         "damage": [0],
 
@@ -96,6 +101,7 @@
         "range": [1],
         "damage": [0, 1],
         "aoesplash": 1,
+        "nuker": 1,
         "localized_name": "ShadowFiend"
     },
     {
@@ -125,17 +131,21 @@
         "damage": [1],
         "aoesplash": 1,
         "initiator": 1,
+        "disabler": 1,
+        "nuker": 1,
         "localized_name": "Puck"
     },
     {
         "name": "npc_dota_hero_pudge",
         "id": 14,
         "attribute": "str",
-        "roles": [4],
+        "roles": [5],
         "range": [0],
         "damage": [1],
         "aoesplash": 1,
+        "initiator": 1,
         "roamer": 1,
+        "disabler": 1,
         "localized_name": "Pudge"
     },
     {
@@ -151,12 +161,13 @@
         "name": "npc_dota_hero_sand_king",
         "id": 16,
         "attribute": "str",
-        "roles": [3, 4],
+        "roles": [3, 5, 6],
         "range": [0],
         "damage": [1],
         "aoesplash": 1,
         "roamer": 1,
         "initiator": 1,
+        "disabler": 1,
         "localized_name": "SandKing"
     },
     {
@@ -167,7 +178,7 @@
         "range": [1],
         "damage": [0, 1],
         "aoesplash": 1,
-        "initiator": 1,
+        "nuker": 1,
         "localized_name": "StormSpirit"
     },
     {
@@ -179,6 +190,7 @@
         "damage": [0],
         "aoesplash": 1,
         "initiator": 1,
+        "disabler": 1,
         "localized_name": "Sven"
     },
     {
@@ -190,16 +202,19 @@
         "damage": [0],
         "aoesplash": 1,
         "initiator": 1,
+        "nuker": 1,
+        "pusher": 1,
         "localized_name": "Tiny"
     },
     {
         "name": "npc_dota_hero_vengefulspirit",
         "id": 20,
         "attribute": "agi",
-        "roles": [1, 4, 5],
+        "roles": [1, 5],
         "range": [1],
         "damage": [0],
         "initiator": 1,
+        "disabler": 1,
         "localized_name": "VengefulSpirit"
     },
     {
@@ -215,22 +230,24 @@
         "name": "npc_dota_hero_zuus",
         "id": 22,
         "attribute": "int",
-        "roles": [2, 4],
+        "roles": [2, 5],
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
+        "nuker": 1,
         "localized_name": "Zeus"
     },
     {
         "name": "npc_dota_hero_kunkka",
         "id": 23,
         "attribute": "str",
-        "roles": [1, 2, 4],
+        "roles": [1, 2, 5],
         "range": [0],
         "damage": [0],
         "aoesplash": 1,
         "roamer": 1,
         "initiator": 1,
+        "disabler": 1,
         "localized_name": "Kunkka"
     },
     {
@@ -240,7 +257,7 @@
         "roles": [2],
         "range": [1],
         "damage": [0, 1],
-
+        "nuker": 1,
         "localized_name": "Lina"
     },
     {
@@ -251,6 +268,7 @@
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
+        "nuker": 1,
         "localized_name": "Lich"
     },
     {
@@ -261,6 +279,8 @@
         "range": [1],
         "damage": [1],
         "initiator": 1,
+        "disabler": 1,
+        "nuker": 1,
         "localized_name": "Lion"
     },
     {
@@ -271,16 +291,20 @@
         "range": [1],
         "damage": [1],
         "initiator": 1,
+        "disabler": 1,
+        "nuker": 1,
+        "pusher": 1,
         "localized_name": "ShadowShaman"
     },
     {
         "name": "npc_dota_hero_slardar",
         "id": 28,
         "attribute": "str",
-        "roles": [3, 4],
+        "roles": [3, 5],
         "range": [0],
         "damage": [0],
         "initiator": 1,
+        "disabler": 1,
         "localized_name": "Slardar"
     },
     {
@@ -302,13 +326,14 @@
         "range": [1],
         "damage": [0, 1],
         "aoesplash": 1,
+        "nuker": 1,
         "localized_name": "WitchDoctor"
     },
     {
         "name": "npc_dota_hero_riki",
         "id": 32,
         "attribute": "agi",
-        "roles": [1, 3, 4],
+        "roles": [1, 3, 5],
         "range": [0],
         "damage": [0],
         "aoesplash": 1,
@@ -324,6 +349,8 @@
         "damage": [1],
         "aoesplash": 1,
         "initiator": 1,
+        "disabler": 1,
+        "pusher": 1,
         "localized_name": "Enigma"
     },
     {
@@ -334,6 +361,8 @@
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
+        "nuker": 1,
+        "pusher": 1,
         "localized_name": "Tinker"
     },
     {
@@ -353,6 +382,7 @@
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
+        "nuker": 1,
         "localized_name": "Necrophos"
     },
     {
@@ -374,6 +404,8 @@
         "range": [0],
         "damage": [0],
         "initiator": 1,
+        "disabler": 1,
+        "durable": 1,
         "localized_name": "Beastmaster"
     },
     {
@@ -384,13 +416,14 @@
         "range": [1],
         "damage": [0, 1],
         "aoesplash": 1,
+        "nuker": 1,
         "localized_name": "QueenofPain"
     },
     {
         "name": "npc_dota_hero_venomancer",
         "id": 40,
         "attribute": "agi",
-        "roles": [1, 3, 4],
+        "roles": [1, 3, 5],
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
@@ -413,7 +446,8 @@
         "roles": [1, 6],
         "range": [0],
         "damage": [0],
-        "initiator": 1,
+        
+        "disabler": 1,
         "localized_name": "WraithKing"
     },
     {
@@ -423,7 +457,7 @@
         "roles": [2],
         "range": [1],
         "damage": [0, 1],
-        "aoesplash": 1,
+        "pusher": 1,
         "localized_name": "DeathProphet"
     },
     {
@@ -440,10 +474,12 @@
         "name": "npc_dota_hero_pugna",
         "id": 45,
         "attribute": "int",
-        "roles": [2, 3, 4],
+        "roles": [2, 3, 5],
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
+        "nuker": 1,
+        "pusher": 1,
         "localized_name": "Pugna"
     },
     {
@@ -463,7 +499,7 @@
         "roles": [2, 3],
         "range": [1],
         "damage": [0, 1],
-        "initiator": 1,
+        
         "localized_name": "Viper"
     },
     {
@@ -474,6 +510,7 @@
         "range": [1],
         "damage": [0, 1],
         "aoesplash": 1,
+        "nuker": 1,
         "localized_name": "Luna"
     },
     {
@@ -485,6 +522,9 @@
         "damage": [0],
         "aoesplash": 1,
         "initiator": 1,
+        "disabler": 1,
+        "pusher": 1,
+        "durable": 1,
         "localized_name": "DragonKnight"
     },
     {
@@ -501,21 +541,24 @@
         "name": "npc_dota_hero_rattletrap",
         "id": 51,
         "attribute": "str",
-        "roles": [3, 4],
+        "roles": [3, 5],
         "range": [0],
         "damage": [1],
         "roamer": 1,
         "initiator": 1,
+        "disabler": 1,
         "localized_name": "Clockwerk"
     },
     {
         "name": "npc_dota_hero_leshrac",
         "id": 52,
         "attribute": "int",
-        "roles": [1, 2, 4],
+        "roles": [1, 2, 5],
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
+        "nuker": 1,
+        "pusher": 1,
         "localized_name": "Leshrac"
     },
     {
@@ -526,6 +569,7 @@
         "range": [1],
         "damage": [0],
         "roamer": 1,
+        "pusher": 1,
         "localized_name": "Nature'sProphet"
     },
     {
@@ -570,10 +614,11 @@
         "name": "npc_dota_hero_enchantress",
         "id": 58,
         "attribute": "int",
-        "roles": [3, 4, 6],
+        "roles": [3, 5, 6],
         "range": [1],
         "damage": [0, 1],
         "roamer": 1,
+        "pusher": 1,
         "localized_name": "Enchantress"
     },
     {
@@ -583,17 +628,20 @@
         "roles": [1, 2, 3],
         "range": [1],
         "damage": [0, 1],
+        "initiator": 1,
+        "durable": 1,
         "localized_name": "Huskar"
     },
     {
         "name": "npc_dota_hero_night_stalker",
         "id": 60,
         "attribute": "str",
-        "roles": [3, 4],
+        "roles": [3, 5],
         "range": [0],
         "damage": [0],
         "roamer": 1,
         "initiator": 1,
+        "disabler": 1,
         "localized_name": "NightStalker"
     },
     {
@@ -603,13 +651,14 @@
         "roles": [2, 3],
         "range": [0],
         "damage": [0],
+        "pusher": 1,
         "localized_name": "Broodmother"
     },
     {
         "name": "npc_dota_hero_bounty_hunter",
         "id": 62,
         "attribute": "agi",
-        "roles": [4],
+        "roles": [5],
         "range": [0],
         "damage": [0, 1],
         "roamer": 1,
@@ -619,7 +668,7 @@
         "name": "npc_dota_hero_weaver",
         "id": 63,
         "attribute": "agi",
-        "roles": [1, 3, 4],
+        "roles": [1, 3, 5],
         "range": [1],
         "damage": [0],
         "localized_name": "Weaver"
@@ -632,6 +681,8 @@
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
+        "nuker": 1,
+        "pusher": 1,
         "localized_name": "Jakiro"
     },
     {
@@ -649,10 +700,11 @@
         "name": "npc_dota_hero_chen",
         "id": 66,
         "attribute": "int",
-        "roles": [4, 6],
+        "roles": [5, 6],
         "range": [1],
         "damage": [1],
         "roamer": 1,
+        "pusher": 1,
         "localized_name": "Chen"
     },
     {
@@ -663,7 +715,7 @@
         "range": [0],
         "damage": [0],
         "aoesplash": 1,
-        "initiator": 1,
+        
         "localized_name": "Spectre"
     },
     {
@@ -675,6 +727,8 @@
         "damage": [0, 1],
         "roamer": 1,
         "initiator": 1,
+        "disabler": 1,
+        "durable": 1,
         "localized_name": "Doom"
     },
     {
@@ -694,18 +748,19 @@
         "roles": [1, 6],
         "range": [0],
         "damage": [0],
-        "initiator": 1,
+        
         "localized_name": "Ursa"
     },
     {
         "name": "npc_dota_hero_spirit_breaker",
         "id": 71,
         "attribute": "str",
-        "roles": [3, 4],
+        "roles": [3, 5],
         "range": [0],
         "damage": [0],
         "roamer": 1,
         "initiator": 1,
+        "disabler": 1,
         "localized_name": "SpiritBreaker"
     },
     {
@@ -726,6 +781,7 @@
         "range": [0],
         "damage": [0],
         "aoesplash": 1,
+        "durable": 1,
         "localized_name": "Alchemist"
     },
     {
@@ -736,16 +792,19 @@
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
+        "disabler": 1,
+        "nuker": 1,
         "localized_name": "Invoker"
     },
     {
         "name": "npc_dota_hero_silencer",
         "id": 75,
         "attribute": "int",
-        "roles": [1, 2, 4],
+        "roles": [1, 2, 5],
         "range": [1],
         "damage": [0, 1],
         "initiator": 1,
+        "disabler": 1,
         "localized_name": "Silencer"
     },
     {
@@ -755,6 +814,7 @@
         "roles": [1, 2],
         "range": [1],
         "damage": [0, 1],
+        "nuker": 1,
         "localized_name": "OutworldDevourer"
     },
     {
@@ -764,7 +824,7 @@
         "roles": [1, 3, 6],
         "range": [0],
         "damage": [0],
-
+        "pusher": 1,
         "localized_name": "Lycan"
     },
     {
@@ -775,6 +835,8 @@
         "range": [0],
         "damage": [0],
         "initiator": 1,
+        "disabler": 1,
+        "durable": 1,
         "localized_name": "Brewmaster"
     },
     {
@@ -784,6 +846,7 @@
         "roles": [5],
         "range": [1],
         "damage": [1],
+        "disabler": 1,
         "localized_name": "ShadowDemon"
     },
     {
@@ -793,6 +856,7 @@
         "roles": [1, 3, 6],
         "range": [0, 1],
         "damage": [0],
+        "pusher": 1,
         "localized_name": "LoneDruid"
     },
     {
@@ -802,7 +866,9 @@
         "roles": [1],
         "range": [0],
         "damage": [0],
-        "initiator": 1,
+        "pusher": 1,
+        "disabler": 1,
+        "durable": 1,
         "localized_name": "ChaosKnight"
     },
     {
@@ -813,14 +879,14 @@
         "range": [0],
         "damage": [0, 1],
         "aoesplash": 1,
-        "initiator": 1,
+        
         "localized_name": "Meepo"
     },
     {
         "name": "npc_dota_hero_treant",
         "id": 83,
         "attribute": "str",
-        "roles": [4],
+        "roles": [5],
         "range": [0],
         "damage": [1],
         "aoesplash": 1,
@@ -835,13 +901,15 @@
         "roles": [5],
         "range": [0],
         "damage": [1],
+        "disabler": 1,
+        "nuker": 1,
         "localized_name": "OgreMagi"
     },
     {
         "name": "npc_dota_hero_undying",
         "id": 85,
         "attribute": "str",
-        "roles": [3, 4],
+        "roles": [3, 5],
         "range": [0],
         "damage": [1],
         "localized_name": "Undying"
@@ -850,7 +918,7 @@
         "name": "npc_dota_hero_rubick",
         "id": 86,
         "attribute": "int",
-        "roles": [4],
+        "roles": [5],
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
@@ -864,34 +932,39 @@
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
+        "disabler": 1,
         "localized_name": "Disruptor"
     },
     {
         "name": "npc_dota_hero_nyx_assassin",
         "id": 88,
         "attribute": "agi",
-        "roles": [3, 4],
+        "roles": [3, 5],
         "range": [0],
         "damage": [1],
         "roamer": 1,
         "initiator": 1,
+        "disabler": 1,
+        "nuker": 1,
         "localized_name": "NyxAssassin"
     },
     {
         "name": "npc_dota_hero_naga_siren",
         "id": 89,
         "attribute": "agi",
-        "roles": [4],
+        "roles": [1, 5],
         "range": [0],
         "damage": [0],
         "initiator": 1,
+        "disabler": 1,
+        "pusher": 1,
         "localized_name": "NagaSiren"
     },
     {
         "name": "npc_dota_hero_keeper_of_the_light",
         "id": 90,
         "attribute": "int",
-        "roles": [4],
+        "roles": [5],
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
@@ -901,7 +974,7 @@
         "name": "npc_dota_hero_wisp",
         "id": 91,
         "attribute": "str",
-        "roles": [4],
+        "roles": [5],
         "range": [1],
         "damage": [0, 1],
         "localized_name": "Io"
@@ -913,6 +986,7 @@
         "roles": [1, 2],
         "range": [1],
         "damage": [0],
+        "nuker": 1,
         "localized_name": "Visage"
     },
     {
@@ -941,6 +1015,7 @@
         "roles": [1, 6],
         "range": [0, 1],
         "damage": [0],
+        "pusher": 1,
         "localized_name": "TrollWarlord"
     },
     {
@@ -952,6 +1027,8 @@
         "damage": [0, 1],
         "aoesplash": 1,
         "initiator": 1,
+        "disabler": 1,
+        "durable": 1,
         "localized_name": "CentaurWarrunner"
     },
     {
@@ -973,6 +1050,7 @@
         "range": [0],
         "damage": [1],
         "aoesplash": 1,
+        "nuker": 1,
         "localized_name": "Timbersaw"
     },
     {
@@ -989,20 +1067,22 @@
         "name": "npc_dota_hero_tusk",
         "id": 100,
         "attribute": "str",
-        "roles": [4],
+        "roles": [5],
         "range": [0],
         "damage": [0],
         "roamer": 1,
         "initiator": 1,
+        "disabler": 1,
         "localized_name": "Tusk"
     },
     {
         "name": "npc_dota_hero_skywrath_mage",
         "id": 101,
         "attribute": "int",
-        "roles": [2, 4, 5],
+        "roles": [2, 5],
         "range": [1],
         "damage": [1],
+        "nuker": 1,
         "localized_name": "SkywrathMage"
     },
     {
@@ -1013,13 +1093,14 @@
         "range": [0],
         "damage": [0, 1],
         "aoesplash": 1,
+        "durable": 1,
         "localized_name": "Abaddon"
     },
     {
         "name": "npc_dota_hero_elder_titan",
         "id": 103,
         "attribute": "str",
-        "roles": [3, 4],
+        "roles": [3, 5],
         "range": [0],
         "damage": [0, 1],
         "aoesplash": 1,
@@ -1035,6 +1116,7 @@
         "range": [0],
         "damage": [0],
         "initiator": 1,
+        "disabler": 1,
         "localized_name": "LegionCommander"
     },
     {
@@ -1051,12 +1133,13 @@
         "name": "npc_dota_hero_earth_spirit",
         "id": 107,
         "attribute": "str",
-        "roles": [4],
+        "roles": [5],
         "range": [0],
         "damage": [1],
         "aoesplash": 1,
         "roamer": 1,
-        "initiator": 1,
+        
+        "disabler": 1,
         "localized_name": "EarthSpirit"
     },
     {
@@ -1066,6 +1149,7 @@
         "roles": [1],
         "range": [0, 1],
         "damage": [0],
+        "pusher": 1,
         "localized_name": "Terrorblade"
     },
     {
@@ -1077,6 +1161,7 @@
         "damage": [1],
         "aoesplash": 1,
         "initiator": 1,
+        "nuker": 1,
         "localized_name": "Phoenix"
     },
     {
@@ -1086,17 +1171,20 @@
         "roles": [5],
         "range": [1],
         "damage": [1],
+        "nuker": 1,
         "localized_name": "Oracle"
     },
     {
         "name": "npc_dota_hero_techies",
         "id": 105,
         "attribute": "int",
-        "roles": [3, 4],
+        "roles": [3, 5],
         "range": [1],
         "damage": [1],
         "aoesplash": 1,
         "roamer": 1,
+        "disabler": 1,
+        "nuker": 1,
         "localized_name": "Techies"
     },
     {
@@ -1106,6 +1194,7 @@
         "roles": [5],
         "range": [1],
         "damage": [1],
+        "disabler": 1,
         "localized_name": "WinterWyvern"
     },
     {
@@ -1125,19 +1214,19 @@
         "range": [0],
         "damage": [1],
         "aoesplash": 1,
-        "initiator": 1,
+        
         "localized_name": "Underlord"
     },
     {
         "name": "npc_dota_hero_monkey_king",
         "id": 114,
         "attribute": "agi",
-        "roles": [1, 4],
+        "roles": [1, 5],
         "range": [0],
         "damage": [0],
         "aoesplash": 1,
         "roamer": 1,
-        "initiator": 1,
+        
         "localized_name": "MonkeyKing"
     },
     {
@@ -1149,15 +1238,17 @@
         "damage": [0],
         "roamer": 1,
         "initiator": 1,
+        "nuker": 1,
         "localized_name": "Pangolier"
     },
     {
         "name": "npc_dota_hero_dark_willow",
         "id": 119,
         "attribute": "int",
-        "roles": [4, 5],
+        "roles": [2, 5],
         "range": [1],
         "damage": [0, 1],
+        "nuker": 1,
         "localized_name": "DarkWillow"
     }
 ]
