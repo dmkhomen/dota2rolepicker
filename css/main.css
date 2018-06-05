@@ -205,3 +205,30 @@ p {
     color: rgb(218, 165, 32);
     transition: all 0.4s ease-in-out;
 }
+
+
+.selector2 {
+    padding: 10px;
+    margin: 2px 1px;
+    background-color: #666;
+    border-top: solid #777 2px;
+    border-left: solid #777 2px;
+    border-bottom: solid #555 2px;
+    border-right: solid #555 2px;
+    color: #ccc;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.selector2.selected {
+    background-color: #999;
+    border-top: solid #666 2px;
+    border-left: solid #666 2px;
+    border-bottom: solid #ccc 2px;
+    border-right: solid #ccc 2px;
+    color: black;
+}
+/* do hovers */
+/* .selector2:hover {
+
+} */
