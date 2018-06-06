@@ -28,6 +28,7 @@
         "range": [1],
         "damage": [1],
         "disabler": 1,
+        "saver": 1,
         "localized_name": "Bane"
     },
     {
@@ -111,6 +112,7 @@
         "roles": [1],
         "range": [1],
         "damage": [0, 1],
+        "durable": 1,
         "localized_name": "Morphling"
     },
     {
@@ -146,6 +148,7 @@
         "initiator": 1,
         "roamer": 1,
         "disabler": 1,
+        "durable": 1,
         "localized_name": "Pudge"
     },
     {
@@ -155,6 +158,7 @@
         "roles": [1, 2],
         "range": [1],
         "damage": [0],
+        "durable": 1,
         "localized_name": "Razor"
     },
     {
@@ -191,6 +195,7 @@
         "aoesplash": 1,
         "initiator": 1,
         "disabler": 1,
+        "durable": 1,
         "localized_name": "Sven"
     },
     {
@@ -204,6 +209,7 @@
         "initiator": 1,
         "nuker": 1,
         "pusher": 1,
+        "durable": 1,
         "localized_name": "Tiny"
     },
     {
@@ -215,6 +221,7 @@
         "damage": [0],
         "initiator": 1,
         "disabler": 1,
+        "saver": 1,
         "localized_name": "VengefulSpirit"
     },
     {
@@ -305,6 +312,7 @@
         "damage": [0],
         "initiator": 1,
         "disabler": 1,
+        "durable": 1,
         "localized_name": "Slardar"
     },
     {
@@ -316,6 +324,7 @@
         "damage": [1],
         "aoesplash": 1,
         "initiator": 1,
+        "durable": 1,
         "localized_name": "Tidehunter"
     },
     {
@@ -446,8 +455,8 @@
         "roles": [1, 6],
         "range": [0],
         "damage": [0],
-        
         "disabler": 1,
+        "durable": 1,
         "localized_name": "WraithKing"
     },
     {
@@ -480,6 +489,7 @@
         "aoesplash": 1,
         "nuker": 1,
         "pusher": 1,
+        "saver": 1,
         "localized_name": "Pugna"
     },
     {
@@ -499,7 +509,7 @@
         "roles": [2, 3],
         "range": [1],
         "damage": [0, 1],
-        
+        "durable": 1,
         "localized_name": "Viper"
     },
     {
@@ -535,6 +545,7 @@
         "range": [1],
         "damage": [0, 1],
         "aoesplash": 1,
+        "saver": 1,
         "localized_name": "Dazzle"
     },
     {
@@ -579,6 +590,7 @@
         "roles": [1, 6],
         "range": [0],
         "damage": [0],
+        "durable": 1,
         "localized_name": "Lifestealer"
     },
     {
@@ -608,6 +620,7 @@
         "roles": [1, 3],
         "range": [0],
         "damage": [0],
+        "saver": 1,
         "localized_name": "Omniknight"
     },
     {
@@ -642,6 +655,7 @@
         "roamer": 1,
         "initiator": 1,
         "disabler": 1,
+        "durable": 1,
         "localized_name": "NightStalker"
     },
     {
@@ -671,6 +685,7 @@
         "roles": [1, 3, 5],
         "range": [1],
         "damage": [0],
+        "saver": 1,
         "localized_name": "Weaver"
     },
     {
@@ -761,6 +776,7 @@
         "roamer": 1,
         "initiator": 1,
         "disabler": 1,
+        "durable": 1,
         "localized_name": "SpiritBreaker"
     },
     {
@@ -815,6 +831,7 @@
         "range": [1],
         "damage": [0, 1],
         "nuker": 1,
+        "saver": 1,
         "localized_name": "OutworldDevourer"
     },
     {
@@ -847,6 +864,7 @@
         "range": [1],
         "damage": [1],
         "disabler": 1,
+        "saver": 1,
         "localized_name": "ShadowDemon"
     },
     {
@@ -892,6 +910,7 @@
         "aoesplash": 1,
         "roamer": 1,
         "initiator": 1,
+        "saver": 1,
         "localized_name": "TreantProtector"
     },
     {
@@ -912,6 +931,7 @@
         "roles": [3, 5],
         "range": [0],
         "damage": [1],
+        "durable": 1,
         "localized_name": "Undying"
     },
     {
@@ -958,6 +978,7 @@
         "initiator": 1,
         "disabler": 1,
         "pusher": 1,
+        "saver": 1,
         "localized_name": "NagaSiren"
     },
     {
@@ -977,6 +998,7 @@
         "roles": [5],
         "range": [1],
         "damage": [0, 1],
+        "saver": 1,
         "localized_name": "Io"
     },
     {
@@ -1051,6 +1073,7 @@
         "damage": [1],
         "aoesplash": 1,
         "nuker": 1,
+        "durable": 1,
         "localized_name": "Timbersaw"
     },
     {
@@ -1073,6 +1096,7 @@
         "roamer": 1,
         "initiator": 1,
         "disabler": 1,
+        "saver": 1,
         "localized_name": "Tusk"
     },
     {
@@ -1094,6 +1118,7 @@
         "damage": [0, 1],
         "aoesplash": 1,
         "durable": 1,
+        "saver": 1,
         "localized_name": "Abaddon"
     },
     {
@@ -1138,7 +1163,7 @@
         "damage": [1],
         "aoesplash": 1,
         "roamer": 1,
-        
+        "saver": 1,
         "disabler": 1,
         "localized_name": "EarthSpirit"
     },
@@ -1150,6 +1175,7 @@
         "range": [0, 1],
         "damage": [0],
         "pusher": 1,
+        "saver": 1,
         "localized_name": "Terrorblade"
     },
     {
@@ -1162,6 +1188,7 @@
         "aoesplash": 1,
         "initiator": 1,
         "nuker": 1,
+        "saver": 1,
         "localized_name": "Phoenix"
     },
     {
@@ -1172,6 +1199,7 @@
         "range": [1],
         "damage": [1],
         "nuker": 1,
+        "saver": 1,
         "localized_name": "Oracle"
     },
     {
@@ -1195,6 +1223,7 @@
         "range": [1],
         "damage": [1],
         "disabler": 1,
+        "saver": 1,
         "localized_name": "WinterWyvern"
     },
     {
@@ -1214,7 +1243,7 @@
         "range": [0],
         "damage": [1],
         "aoesplash": 1,
-        
+        "saver": 1,
         "localized_name": "Underlord"
     },
     {

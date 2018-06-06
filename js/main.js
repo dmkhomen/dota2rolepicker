@@ -99,7 +99,7 @@ function mycallback(data) {
         }
         totalFavorites = favorites.length;
         console.log(totalFavorites);
-        totalFavoritesSpan.innerHTML = "(" + totalFavorites + ")";
+        totalFavoritesSpan.innerHTML = totalFavorites;
     }
 
     //update favorites and cookie on hero clicking
@@ -117,14 +117,14 @@ function mycallback(data) {
             }
             totalFavorites = favorites.length;
             console.log(totalFavorites);
-            totalFavoritesSpan.innerHTML = "(" + totalFavorites + ")";
+            totalFavoritesSpan.innerHTML = totalFavorites;
             // totalFavoritesSpan.classList
 
             var favoritesCookie = JSON.stringify(favorites);
             setCookie("favs", favoritesCookie, 365);
         }, false);
-        items[i].addEventListener('click', selectHeroes2, false);
-        // items[i].addEventListener('click', selectHeroes2, false);
+        items[i].addEventListener('click', selectHeroes, false);
+        // items[i].addEventListener('click', selectHeroes, false);
     }
 
     //filtration
@@ -179,9 +179,9 @@ function mycallback(data) {
     // }
 
 
-    var selectors2 = document.getElementsByClassName("selector2");
-    for (var i = 0; i < selectors2.length; i++) {
-        selectors2[i].addEventListener('click', selectHeroes2, false);
+    var selectors = document.getElementsByClassName("selector");
+    for (var i = 0; i < selectors.length; i++) {
+        selectors[i].addEventListener('click', selectHeroes, false);
     }
 
     //default values
@@ -193,11 +193,12 @@ function mycallback(data) {
     var initiatorSelected = 'all';
     var disablerSelected = 'all';
     var nukerSelected = 'all';
+    var saverSelected = 'all';
     var pusherSelected = 'all';
     var durableSelected = 'all';
     var favoritesSelected = false;
 
-    function selectHeroes2() {
+    function selectHeroes() {
         // console.log('clicked');
 
 
@@ -340,6 +341,17 @@ function mycallback(data) {
                 }
                 // rangeSelected = value;
                 break;
+            case 'saver':
+                if (alreadySelected) {
+                    saverSelected = 'all';
+                    this.classList.remove("selected");
+                } else {
+                    saverSelected = value;
+                    this.classList.add("selected");
+                    // remove = true;
+                }
+                // rangeSelected = value;
+                break;
         }
         // console.log(attribute + ', ' + value);
         //kill class on all elements
@@ -367,6 +379,7 @@ function mycallback(data) {
                 (nukerSelected == 'all' || heroes[i].nuker) &&
                 (pusherSelected == 'all' || heroes[i].pusher) &&
                 (durableSelected == 'all' || heroes[i].durable) &&
+                (saverSelected == 'all' || heroes[i].saver) &&
                 (favoritesSelected == false || hasInside(favorites, heroes[i].id.toString()))
             ) {
                 affected.push(heroes[i].id);
