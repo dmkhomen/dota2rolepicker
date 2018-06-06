@@ -116,68 +116,12 @@ function mycallback(data) {
                 this.classList.remove("favorite");
             }
             totalFavorites = favorites.length;
-            console.log(totalFavorites);
             totalFavoritesSpan.innerHTML = totalFavorites;
-            // totalFavoritesSpan.classList
-
             var favoritesCookie = JSON.stringify(favorites);
             setCookie("favs", favoritesCookie, 365);
         }, false);
         items[i].addEventListener('click', selectHeroes, false);
-        // items[i].addEventListener('click', selectHeroes, false);
     }
-
-    //filtration
-    //get all selectors and bind filter function to them
-    // var selectors = document.getElementsByClassName('selector');
-    // for (i = 0; i < selectors.length; i++) {
-    //     selectors[i].addEventListener('change', selectHeroes, false);
-    // }
-
-    // function selectHeroes() {
-
-    //     //get selected values
-    //     var roleSelected = document.getElementById("role-selector").value;
-    //     var rangeSelected = document.getElementById("range-selector").value;
-    //     var damageSelected = document.getElementById("damage-selector").value;
-    //     var favoritesSelected = document.querySelector('#favorites-selector').checked;
-    //     if (favoritesSelected) {
-    //         totalFavoritesSpan.classList.add("enabled");
-    //     } else {
-    //         totalFavoritesSpan.classList.remove("enabled");
-    //     }
-
-    //     //array contains id's of heroes that pass filter
-    //     var affected = [];
-
-    //     for (var i = 0; i < heroes.length; i++) {
-    //         if (
-    //             (roleSelected == 'all' || hasInside(heroes[i].roles, parseInt(roleSelected))) &&
-    //             (rangeSelected == 'all' || hasInside(heroes[i].range, parseInt(rangeSelected))) &&
-    //             (damageSelected == 'all' || hasInside(heroes[i].damage, parseInt(damageSelected))) &&
-    //             (favoritesSelected == false || hasInside(favorites, heroes[i].id.toString()))
-    //         ) {
-    //             affected.push(heroes[i].id);
-    //         }
-    //     }
-
-    //     //get rendered hero-items, check their ids and add respective classes depending if id is in the affected array
-    //     for (var i = 0; i < items.length; i++) {
-    //         var id = items[i].getAttribute("data-id");
-    //         if (hasInside(affected, parseInt(id))) {
-    //             if (hasClass(items[i], "darken")) {
-    //                 items[i].classList.remove("darken");
-    //             }
-    //             items[i].classList.add("lighten");
-    //         } else {
-    //             if (hasClass(items[i], "lighten")) {
-    //                 items[i].classList.remove("lighten");
-    //             }
-    //             items[i].classList.add("darken");
-    //         }
-    //     }
-    // }
-
 
     var selectors = document.getElementsByClassName("selector");
     for (var i = 0; i < selectors.length; i++) {
@@ -199,15 +143,10 @@ function mycallback(data) {
     var favoritesSelected = false;
 
     function selectHeroes() {
-        // console.log('clicked');
-
 
         var attribute = this.getAttribute("data-select");
         var value = this.getAttribute("data-value");
         var alreadySelected;
-
-
-
 
         if (hasClass(this, "selected")) {
             console.log("already selected");
@@ -215,17 +154,13 @@ function mycallback(data) {
         }
         var clickedGroup = document.querySelectorAll('[data-select="' + attribute + '"]');
         for (var i = 0; i < clickedGroup.length; i++) {
-            // console.log('inside if');
             clickedGroup[i].classList.remove("selected");
         }
-        // var remove = false;
-        // console.log(bla);
         switch (this.getAttribute("data-select")) {
             case 'role':
                 if (alreadySelected) {
                     roleSelected = 'all';
                     this.classList.remove("selected");
-                    // remove = true;
                 } else {
                     roleSelected = value;
                     this.classList.add("selected");
@@ -238,9 +173,7 @@ function mycallback(data) {
                 } else {
                     damageSelected = value;
                     this.classList.add("selected");
-                    // remove = true;
                 }
-                // damageSelected = value;
                 break;
             case 'range':
                 if (alreadySelected) {
@@ -249,9 +182,7 @@ function mycallback(data) {
                 } else {
                     rangeSelected = value;
                     this.classList.add("selected");
-                    // remove = true;
                 }
-                // rangeSelected = value;
                 break;
             case 'favorites':
                 if (alreadySelected) {
@@ -260,9 +191,7 @@ function mycallback(data) {
                 } else {
                     favoritesSelected = value;
                     this.classList.add("selected");
-                    // remove = true;
                 }
-                // rangeSelected = value;
                 break;
             case 'aoesplash':
                 if (alreadySelected) {
@@ -271,9 +200,7 @@ function mycallback(data) {
                 } else {
                     aoesplashSelected = value;
                     this.classList.add("selected");
-                    // remove = true;
                 }
-                // rangeSelected = value;
                 break;
             case 'roamer':
                 if (alreadySelected) {
@@ -282,9 +209,7 @@ function mycallback(data) {
                 } else {
                     roamerSelected = value;
                     this.classList.add("selected");
-                    // remove = true;
                 }
-                // rangeSelected = value;
                 break;
             case 'initiator':
                 if (alreadySelected) {
@@ -293,9 +218,7 @@ function mycallback(data) {
                 } else {
                     initiatorSelected = value;
                     this.classList.add("selected");
-                    // remove = true;
                 }
-                // rangeSelected = value;
                 break;
             case 'disabler':
                 if (alreadySelected) {
@@ -304,9 +227,7 @@ function mycallback(data) {
                 } else {
                     disablerSelected = value;
                     this.classList.add("selected");
-                    // remove = true;
                 }
-                // rangeSelected = value;
                 break;
             case 'nuker':
                 if (alreadySelected) {
@@ -315,9 +236,7 @@ function mycallback(data) {
                 } else {
                     nukerSelected = value;
                     this.classList.add("selected");
-                    // remove = true;
                 }
-                // rangeSelected = value;
                 break;
             case 'pusher':
                 if (alreadySelected) {
@@ -326,9 +245,7 @@ function mycallback(data) {
                 } else {
                     pusherSelected = value;
                     this.classList.add("selected");
-                    // remove = true;
                 }
-                // rangeSelected = value;
                 break;
             case 'durable':
                 if (alreadySelected) {
@@ -337,9 +254,7 @@ function mycallback(data) {
                 } else {
                     durableSelected = value;
                     this.classList.add("selected");
-                    // remove = true;
                 }
-                // rangeSelected = value;
                 break;
             case 'saver':
                 if (alreadySelected) {
@@ -348,25 +263,11 @@ function mycallback(data) {
                 } else {
                     saverSelected = value;
                     this.classList.add("selected");
-                    // remove = true;
                 }
-                // rangeSelected = value;
                 break;
         }
-        // console.log(attribute + ', ' + value);
-        //kill class on all elements
-        // if (!remove) {
-
-
-        // }
-        // console.log('clicked group ' + clickedGroup);
-        // console.log(value);
-        // console.log(clickedGroup.length);
-
-
 
         var affected = [];
-
         for (var i = 0; i < heroes.length; i++) {
             if (
                 (roleSelected == 'all' || hasInside(heroes[i].roles, parseInt(roleSelected))) &&
@@ -401,9 +302,7 @@ function mycallback(data) {
                 items[i].classList.add("darken");
             }
         }
-
     }
-
 }
 
 getHeroes('heroes.json', mycallback); //passing mycallback as a method
