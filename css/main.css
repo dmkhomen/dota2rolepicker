@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 body {
     background-color: #000;
-    color: #fff;
+    color: #ccc;
+    background-image: url('../img/asfalt-dark.png');
 }
 
 #wrapper {
@@ -64,27 +65,6 @@ body {
     max-width: 100%;
 }
 
-/* .hero-name {
-    display: none;
-} */
-
-/* select {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #666;
-    border-top: solid #777 2px;
-    border-left: solid #777 2px;
-    border-bottom: solid #555 2px;
-    border-right: solid #555 2px;
-    color: #ccc;
-    text-transform: uppercase;
-    background-image: url("../img/asfalt-dark.png");
-}
-
-select:focus {
-    outline: #fff;
-} */
-
 .lighten {
     opacity: 1;
 }
@@ -120,93 +100,15 @@ select:focus {
     opacity: 1;
 }
 
-/* 
-.toggle {
-    display: inline-block;
-}
-
-.toggle input[type="checkbox"] {
-    display: none;
-}
-
-.toggle {
-    font-size: 16px;
-    background-color: #666;
-    border-top: solid #777 2px;
-    border-left: solid #777 2px;
-    border-bottom: solid #555 2px;
-    border-right: solid #555 2px;
-    color: #ccc;
-    height: 47px;
-    text-transform: uppercase;
-    background-image: url("../img/asfalt-dark.png");
-}
-
-.toggle label {
-    display: inline-block;
-    margin-bottom: 0;
-    position: relative;
-    width: 176px;
-    text-align: left;
-    padding: 10px;
-}
-
-.toggle input[type="checkbox"]+label::before {
-    content: " ";
-    display: block;
-    height: 18px;
-    width: 36px;
-    border-radius: 9px;
-    position: absolute;
-    top: calc(50% - 9px);
-    right: 16px;
-    background-color: #333;
-    background-image: url("../img/asfalt-dark.png");
-    box-shadow: 2px 2px 2px black inset;
-}
-
-.toggle input[type="checkbox"]+label::after {
-    content: " ";
-    display: block;
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    position: absolute;
-    top: calc(50% - 9px);
-    right: 34px;
-    background: rgb(204, 204, 204);
-    transition: all 0.4s ease-in-out;
-}
-
-.toggle input[type="checkbox"]:checked+label::after {
-    right: 16px;
-    transition: all 0.4s ease-in-out;
-    background: rgb(218, 165, 32);
-    box-shadow: 0px 0px 30px gold;
-} */
-
 p {
     color: #999;
     margin: 10px 0 0;
 }
 
-/* 
-#total-favorites {
-    color: rgb(204, 204, 204);
-    transition: all 0.4s ease-in-out;
-}
-
-#total-favorites.enabled {
-    color: rgb(218, 165, 32);
-    transition: all 0.4s ease-in-out;
-} */
-
 #controls {
     display: flex;
-    /* margin-top: 24px; */
     flex-wrap: wrap;
     align-items: center;
-    /* align-content: center; */
     flex-direction: column;
 }
 
@@ -215,57 +117,39 @@ p {
     margin-bottom: 10px;
 }
 
-.selector-group {
-    /* margin: 5px 0; */
-}
-
 .selector {
     padding: 7px;
     background-color: #666;
-    border-top: solid #777 3px;
-    border-left: solid #777 3px;
-    border-bottom: solid #555 3px;
-    border-right: solid #555 3px;
+    border-top: solid #777 1px;
+    border-left: solid #777 1px;
+    border-bottom: solid #555 1px;
+    border-right: solid #555 1px;
     color: #bbb;
     text-transform: uppercase;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
     min-width: 100px;
     text-align: center;
     font-size: 14px;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, .4);
+    background-image: url('../img/asfalt-dark.png');
+    user-select: none;
 }
 
 .selector-big {
     font-size: 16px;
     padding: 10px;
     min-width: 152px;
-    border-top: solid #777 5px;
-    border-left: solid #777 5px;
-    border-bottom: solid #555 5px;
-    border-right: solid #555 5px;
+}
+
+.selector:hover {
+    color: #eeeeee;
 }
 
 .selector.selected {
-    background-color: #999;
-    border-top: solid #888 3px;
-    border-left: solid #888 3px;
-    border-bottom: solid #aaa 3px;
-    border-right: solid #aaa 3px;
-    color: #333;
-}
-
-/* do hovers */
-
-/* .selector:hover {
-        
-    } */
-
-.selector-big.selected {
-    background-color: #999;
-    border-top: solid #888 5px;
-    border-left: solid #888 5px;
-    border-bottom: solid #aaa 5px;
-    border-right: solid #aaa 5px;
+    text-shadow: rgba(255, 255, 255, 0.4) 0 0 35px, rgb(255, 215, 0) 0 0 25px, -1px -1px 0px rgba(0, 0, 0, .4);
+    color: rgb(255, 215, 0);
+    background-image: url('../img/asfalt-dark-gold.png');
 }
 
 .selector-group_role {
@@ -273,16 +157,13 @@ p {
     align-items: center;
 }
 
-.selector-group_range, .selector-group_damage {
+.selector-group_range,
+.selector-group_damage {
     margin-right: 10px;
 }
 
 .selector-favorites {
-    margin-left: 15px;
+    margin-right: 15px;
     padding: 12px;
     font-size: 18px;
 }
-body {
-    /* background: url(https://media.giphy.com/media/14txsZ05GZcwta/giphy.gif) no-repeat center center fixed;  */
-}
-
