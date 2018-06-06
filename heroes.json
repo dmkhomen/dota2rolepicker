@@ -324,6 +324,7 @@
         "damage": [1],
         "aoesplash": 1,
         "initiator": 1,
+        "disabler": 1,
         "durable": 1,
         "localized_name": "Tidehunter"
     },
