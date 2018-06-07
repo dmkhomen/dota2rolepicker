@@ -23,6 +23,12 @@ function setCookie(name, value, expirationDays) {
     document.cookie = name + "=" + value + "; " + expires + "; path=/";
 }
 
+function arrayContainsArray(superset, subset) {
+    return subset.every(function (value) {
+        return (superset.indexOf(value) >= 0);
+    });
+}
+
 //function to get cookie (used to get favorite heroes from cookie)
 function getCookie(cookieName) {
     var name = cookieName + "=";
@@ -132,15 +138,17 @@ function mycallback(data) {
     var roleSelected = 'all';
     var damageSelected = 'all';
     var rangeSelected = 'all';
-    var aoesplashSelected = 'all';
-    var roamerSelected = 'all';
-    var initiatorSelected = 'all';
-    var disablerSelected = 'all';
-    var nukerSelected = 'all';
-    var saverSelected = 'all';
-    var pusherSelected = 'all';
-    var durableSelected = 'all';
+    // var aoesplashSelected = 'all';
+    // var roamerSelected = 'all';
+    // var initiatorSelected = 'all';
+    // var disablerSelected = 'all';
+    // var nukerSelected = 'all';
+    // var saverSelected = 'all';
+    // var pusherSelected = 'all';
+    // var durableSelected = 'all';
     var favoritesSelected = false;
+
+    var specialsSelected = [];
 
     function selectHeroes() {
 
@@ -154,7 +162,10 @@ function mycallback(data) {
         }
         var clickedGroup = document.querySelectorAll('[data-select="' + attribute + '"]');
         for (var i = 0; i < clickedGroup.length; i++) {
-            clickedGroup[i].classList.remove("selected");
+            // console.log(clickedGroup[i].getAttribute("data-select"));
+            if (!(clickedGroup[i].getAttribute("data-select") == 'specials')) {
+                clickedGroup[i].classList.remove("selected");
+            }
         }
         switch (this.getAttribute("data-select")) {
             case 'role':
@@ -193,97 +204,140 @@ function mycallback(data) {
                     this.classList.add("selected");
                 }
                 break;
-            case 'aoesplash':
+                // case 'aoesplash':
+                //     if (alreadySelected) {
+                //         aoesplashSelected = 'all';
+                //         // this.classList.remove("selected");
+                //     } else {
+                //         aoesplashSelected = value;
+                //         this.classList.add("selected");
+                //     }
+                //     break;
+                // case 'roamer':
+                //     if (alreadySelected) {
+                //         roamerSelected = 'all';
+                //         // this.classList.remove("selected");
+                //     } else {
+                //         roamerSelected = value;
+                //         this.classList.add("selected");
+                //     }
+                //     break;
+                // case 'initiator':
+                //     if (alreadySelected) {
+                //         initiatorSelected = 'all';
+                //         // this.classList.remove("selected");
+                //     } else {
+                //         initiatorSelected = value;
+                //         this.classList.add("selected");
+                //     }
+                //     break;
+                // case 'disabler':
+                //     if (alreadySelected) {
+                //         disablerSelected = 'all';
+                //         // this.classList.remove("selected");
+                //     } else {
+                //         disablerSelected = value;
+                //         this.classList.add("selected");
+                //     }
+                //     break;
+                // case 'nuker':
+                //     if (alreadySelected) {
+                //         nukerSelected = 'all';
+                //         // this.classList.remove("selected");
+                //     } else {
+                //         nukerSelected = value;
+                //         this.classList.add("selected");
+                //     }
+                //     break;
+                // case 'pusher':
+                //     if (alreadySelected) {
+                //         pusherSelected = 'all';
+                //         // this.classList.remove("selected");
+                //     } else {
+                //         pusherSelected = value;
+                //         this.classList.add("selected");
+                //     }
+                //     break;
+                // case 'durable':
+                //     if (alreadySelected) {
+                //         durableSelected = 'all';
+                //         // this.classList.remove("selected");
+                //     } else {
+                //         durableSelected = value;
+                //         this.classList.add("selected");
+                //     }
+                //     break;
+                // case 'saver':
+                //     if (alreadySelected) {
+                //         saverSelected = 'all';
+                //         // this.classList.remove("selected");
+                //     } else {
+                //         saverSelected = value;
+                //         this.classList.add("selected");
+                //     }
+                //     break;
+
+            case 'specials':
+                console.log('before: [' + specialsSelected + ']');
                 if (alreadySelected) {
-                    aoesplashSelected = 'all';
+                    console.log('removing from specialsSelected');
+                    var index = specialsSelected.indexOf(value);
+                    specialsSelected.splice(index, 1);
                     this.classList.remove("selected");
                 } else {
-                    aoesplashSelected = value;
+                    console.log('adding to specialsSelected');
+                    console.log(typeof (value));
+                    specialsSelected.push(value);
                     this.classList.add("selected");
                 }
-                break;
-            case 'roamer':
-                if (alreadySelected) {
-                    roamerSelected = 'all';
-                    this.classList.remove("selected");
-                } else {
-                    roamerSelected = value;
-                    this.classList.add("selected");
-                }
-                break;
-            case 'initiator':
-                if (alreadySelected) {
-                    initiatorSelected = 'all';
-                    this.classList.remove("selected");
-                } else {
-                    initiatorSelected = value;
-                    this.classList.add("selected");
-                }
-                break;
-            case 'disabler':
-                if (alreadySelected) {
-                    disablerSelected = 'all';
-                    this.classList.remove("selected");
-                } else {
-                    disablerSelected = value;
-                    this.classList.add("selected");
-                }
-                break;
-            case 'nuker':
-                if (alreadySelected) {
-                    nukerSelected = 'all';
-                    this.classList.remove("selected");
-                } else {
-                    nukerSelected = value;
-                    this.classList.add("selected");
-                }
-                break;
-            case 'pusher':
-                if (alreadySelected) {
-                    pusherSelected = 'all';
-                    this.classList.remove("selected");
-                } else {
-                    pusherSelected = value;
-                    this.classList.add("selected");
-                }
-                break;
-            case 'durable':
-                if (alreadySelected) {
-                    durableSelected = 'all';
-                    this.classList.remove("selected");
-                } else {
-                    durableSelected = value;
-                    this.classList.add("selected");
-                }
-                break;
-            case 'saver':
-                if (alreadySelected) {
-                    saverSelected = 'all';
-                    this.classList.remove("selected");
-                } else {
-                    saverSelected = value;
-                    this.classList.add("selected");
-                }
+                console.log('after: [' + specialsSelected + ']');
                 break;
         }
 
+        //todo attribute == specials, value == roamer/pusher/disabler etc.
+
+
+
         var affected = [];
+        // for (var i = 0; i < heroes.length; i++) {
+        //     if (
+        //         (roleSelected == 'all' || hasInside(heroes[i].roles, parseInt(roleSelected))) &&
+        //         (rangeSelected == 'all' || hasInside(heroes[i].range, parseInt(rangeSelected))) &&
+        //         (damageSelected == 'all' || hasInside(heroes[i].damage, parseInt(damageSelected))) &&
+        //         (aoesplashSelected == 'all' || heroes[i].aoesplash) &&
+        //         (roamerSelected == 'all' || heroes[i].roamer) &&
+        //         (initiatorSelected == 'all' || heroes[i].initiator) &&
+        //         (disablerSelected == 'all' || heroes[i].disabler) &&
+        //         (nukerSelected == 'all' || heroes[i].nuker) &&
+        //         (pusherSelected == 'all' || heroes[i].pusher) &&
+        //         (durableSelected == 'all' || heroes[i].durable) &&
+        //         (saverSelected == 'all' || heroes[i].saver) &&
+        //         (favoritesSelected == false || hasInside(favorites, heroes[i].id.toString()))
+        //     ) {
         for (var i = 0; i < heroes.length; i++) {
             if (
                 (roleSelected == 'all' || hasInside(heroes[i].roles, parseInt(roleSelected))) &&
                 (rangeSelected == 'all' || hasInside(heroes[i].range, parseInt(rangeSelected))) &&
                 (damageSelected == 'all' || hasInside(heroes[i].damage, parseInt(damageSelected))) &&
-                (aoesplashSelected == 'all' || heroes[i].aoesplash) &&
-                (roamerSelected == 'all' || heroes[i].roamer) &&
-                (initiatorSelected == 'all' || heroes[i].initiator) &&
-                (disablerSelected == 'all' || heroes[i].disabler) &&
-                (nukerSelected == 'all' || heroes[i].nuker) &&
-                (pusherSelected == 'all' || heroes[i].pusher) &&
-                (durableSelected == 'all' || heroes[i].durable) &&
-                (saverSelected == 'all' || heroes[i].saver) &&
-                (favoritesSelected == false || hasInside(favorites, heroes[i].id.toString()))
-            ) {
-                affected.push(heroes[i].id);
+                (favoritesSelected == false || hasInside(favorites, heroes[i].id.toString())) &&
+                ((specialsSelected.length == 0) || ( heroes[i].hasOwnProperty("specials") && arrayContainsArray(heroes[i].specials, specialsSelected) ) )
+            ) { 
+                // console.log(heroes[i].localized_name + ' ' + heroes[i].specials);
+
+                // console.log(heroes[i].hasOwnProperty("specials"));
+
+                // if (heroes[i].hasOwnProperty("specials") ) {
+                //     console.log(specialsSelected);
+                //     console.log(heroes[i].specials);
+
+
+                //     if (arrayContainsArray(heroes[i].specials, specialsSelected)) {
+                //         affected.push(heroes[i].id);
+                //     }
+
+                // } else {
+                    affected.push(heroes[i].id);
+                // }
             }
         }
 
@@ -306,3 +360,74 @@ function mycallback(data) {
 }
 
 getHeroes('heroes.json', mycallback); //passing mycallback as a method
+
+
+
+
+
+// var filter = {
+//     address: 'USA',
+//     name: 'Mark'
+// };
+// var users = [{
+//         name: 'John',
+//         email: 'johnson@mail.com',
+//         age: 25,
+//         address: ['Canada', 'England']
+//     },
+//     {
+//         name: 'Tom',
+//         email: 'tom@mail.com',
+//         age: 35,
+//         address: ['USA', 'Canada', 'England']
+//     },
+//     {
+//         name: 'Mark',
+//         email: 'mark@mail.com',
+//         age: 28,
+//         address: ['Canada', 'Ua']
+//     },
+//     {
+//         name: 'Mark',
+//         email: 'mark@mail.com',
+//         age: 28,
+//         address: ['USA', 'England', 'Ua']
+//     }
+// ];
+
+// myFilter = function (item) {
+//     for (var key in filter) {
+//         if (item[key] === undefined || item[key] != filter[key])
+//             return false;
+//     }
+//     return true;
+// }
+
+// users = users.filter(myFilter);
+
+// console.log(users)
+
+
+
+/*
+ * Returns TRUE if the first specified array contains all elements
+ * from the second one. FALSE otherwise.
+ *
+ * @param {array} superset
+ * @param {array} subset
+ *
+ * @returns {boolean}
+ */
+// function arrayContainsArray(superset, subset) {
+//     return subset.every(function (value) {
+//         return (superset.indexOf(value) >= 0);
+//     });
+// }
+
+// var array1 = ['A', 'B', 'C', 'D', 'E'];
+// var array2 = ['B', 'C', 'E'];
+// var array3 = ['B', 'C', 'Z'];
+// var array4 = ['Z'];
+
+
+// console.log(arrayContainsArray(array1, array2));
