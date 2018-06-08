@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dota 2 Hero Picker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- TODO SEO metatags keywords-->
+    <meta name="description" content="The Dota 2 Hero Role Picker helps you to choose most suitable Dota2 heroes in just a couple of clicks.">
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
@@ -22,71 +22,46 @@
         <div id="header">Dota 2 Hero Role Picker</div>
 
         <div id="controls">
-
             <div class="selector-row">
                 <div class="selector-group selector-group_role">
-                    <div class="selector selector-big selector-favorites" data-select="favorites" data-value="1">Favorites:
+                    <div class="selector selector-big selector-favorites" data-value="favorites">Favorites:
                         <span id="total-favorites"></span>
                     </div>
-                    <div class="selector selector-big" data-select="role" data-value="1">Carry</div>
-                    <div class="selector selector-big" data-select="role" data-value="2">Mid lane</div>
-                    <div class="selector selector-big" data-select="role" data-value="3">Offlane</div>
-                    <div class="selector selector-big" data-select="role" data-value="5">Support</div>
-                    <div class="selector selector-big" data-select="role" data-value="6">Jungler</div>
+                    <div class="selector selector-big" data-value="carry">Carry</div>
+                    <div class="selector selector-big" data-value="mid">Mid lane</div>
+                    <div class="selector selector-big" data-value="offlane">Offlane</div>
+                    <div class="selector selector-big" data-value="support">Support</div>
+                    <!-- <div class="selector selector-big" data-value="jungler">Jungler</div> -->
                 </div>
             </div>
-            <!-- <div class="selector-row">
-                <div class="selector-group selector-group_range">
-                    <div class="selector" data-select="range" data-value="0">Melee</div>
-                    <div class="selector" data-select="range" data-value="1">Range</div>
-                </div>
-
-                <div class="selector-group selector-group_damage">
-                    <div class="selector" data-select="damage" data-value="0">Physical</div>
-                    <div class="selector" data-select="damage" data-value="1">Magical</div>
-                </div>
-                <div class="selector-group selector-group_specials ">
-                    <div class="selector" data-select="aoesplash" data-value="1">AoE/Splash</div>
-                    <div class="selector" data-select="initiator" data-value="1">Initiator</div>
-                </div>
-                <div class="selector-group selector-group_specials ">
-                    <div class="selector" data-select="disabler" data-value="1">Disabler</div>
-                    <div class="selector" data-select="saver" data-value="1">Saver</div>
-                </div>
-                <div class="selector-group selector-group_specials ">
-                    <div class="selector" data-select="nuker" data-value="1">Nuker</div>
-                    <div class="selector" data-select="roamer" data-value="1">Roamer</div>
-                </div>
-                <div class="selector-group selector-group_specials ">
-                    <div class="selector" data-select="pusher" data-value="1">Pusher</div>
-                    <div class="selector" data-select="durable" data-value="1">Durable</div>
-                </div>
-            </div> -->
             <div class="selector-row">
                 <div class="selector-group selector-group_range">
-                    <div class="selector" data-select="range" data-value="0">Melee</div>
-                    <div class="selector" data-select="range" data-value="1">Range</div>
+                    <div class="selector" data-value="melee">Melee</div>
+                    <div class="selector" data-value="ranged">Ranged</div>
                 </div>
 
                 <div class="selector-group selector-group_damage">
-                    <div class="selector" data-select="damage" data-value="0">Physical</div>
-                    <div class="selector" data-select="damage" data-value="1">Magical</div>
+                    <div class="selector" data-value="physical">Physical</div>
+                    <div class="selector" data-value="magical">Magical</div>
                 </div>
                 <div class="selector-group selector-group_specials ">
-                    <div class="selector" data-select="specials" data-value="aoesplash">AoE/Splash</div>
-                    <div class="selector" data-select="specials" data-value="initiator">Initiator</div>
+                    <div class="selector" data-value="aoesplash">AoE/Splash</div>
+                    <div class="selector" data-value="initiator">Initiator</div>
                 </div>
                 <div class="selector-group selector-group_specials ">
-                    <div class="selector" data-select="specials" data-value="disabler">Disabler</div>
-                    <div class="selector" data-select="specials" data-value="saver">Saver</div>
+                    <div class="selector" data-value="disabler">Disabler</div>
+                    <div class="selector" data-value="saver">Saver</div>
                 </div>
                 <div class="selector-group selector-group_specials ">
-                    <div class="selector" data-select="specials" data-value="nuker">Nuker</div>
-                    <div class="selector" data-select="specials" data-value="roamer">Roamer</div>
+                    <div class="selector" data-value="nuker">Nuker</div>
+                    <div class="selector" data-value="roamer">Roamer</div>
                 </div>
                 <div class="selector-group selector-group_specials ">
-                    <div class="selector" data-select="specials" data-value="pusher">Pusher</div>
-                    <div class="selector" data-select="specials" data-value="durable">Durable</div>
+                    <div class="selector" data-value="pusher">Pusher</div>
+                    <div class="selector" data-value="durable">Durable</div>
+                </div>
+                <div class="selector-group selector-group_specials ">
+                    <div class="selector" data-value="jungler">Jungler</div>
                 </div>
             </div>
         </div>
@@ -94,7 +69,7 @@
         <div id="content">
             <div class="hero-section">
                 <div class="hero-section__header">
-                    <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_str.png" alt=""> Strength</div>
+                    <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_str.png" alt="">Strength</div>
                 <div class="hero-section__container" id="demo_str"></div>
             </div>
             <div class="hero-section">
