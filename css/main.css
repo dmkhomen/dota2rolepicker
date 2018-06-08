@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
+@font-face {
+    font-family: roles;
+    src: url('../font/roles.woff');
+}
+
 body {
     background-color: #000;
     color: #ccc;
@@ -176,4 +181,30 @@ p {
     margin-right: 15px;
     padding: 12px;
     font-size: 18px;
+}
+
+.fa-role {
+    font-family: roles !important;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.fa-role-carry:before {
+    content: "\e906";
+}
+.fa-role-mid:before {
+    content: "\e901";
+}
+.fa-role-offlane:before {
+    content: "\e902";
+}
+.fa-role-support:before {
+    content: "\e905";
+}
+.selector-favorites i {
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    top: -2px;
 }

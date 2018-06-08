@@ -1,5 +1,5 @@
 ## Dota 2 Hero Role Picker
-v0.3.5
+v0.3.6
 Check it out at [dmkhomen.github.io/dota2rolepicker/!](https://dmkhomen.github.io/dota2rolepicker/) (hosted with Github Pages)
 Made with HTML, CSS and vanilla Javascript.
 
