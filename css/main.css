@@ -126,7 +126,7 @@ p {
     border-right: solid #555 1px;
     color: #bbb;
     text-transform: uppercase;
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, background-image 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
     cursor: pointer;
     min-width: 100px;
     text-align: center;
@@ -143,7 +143,6 @@ p {
 }
 
 .selector:hover {
-    /* color: rgb(255, 215, 0); */
     color: rgb(209, 188, 0);
     background-color: #555;
     border-top: solid #666 1px;

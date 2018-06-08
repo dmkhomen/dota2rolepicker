@@ -56,9 +56,10 @@ getHeroes = function (url, callback) {
     request.open('GET', url);
     request.send();
 }
+getHeroes('heroes.json', getHeroesCallback);
 
 //main function, processes all data from json
-function mycallback(data) {
+function getHeroesCallback(data) {
 
     //data
     var heroes = JSON.parse(data);
@@ -132,6 +133,7 @@ function mycallback(data) {
 
     for (var i = 0; i < selectors.length; i++) {
         selectors[i].addEventListener('click', selectFilters, false);
+        selectors[i].style = "background-position: " + Math.floor(Math.random() * 200) + "px " + Math.floor(Math.random() * 200) + "px";
     }
 
     function selectFilters() {
@@ -185,5 +187,3 @@ function mycallback(data) {
         }
     }
 }
-
-getHeroes('heroes.json', mycallback);
