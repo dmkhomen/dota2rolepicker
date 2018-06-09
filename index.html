@@ -29,10 +29,14 @@
                         Favorites:
                         <span id="total-favorites"></span>
                     </div>
-                    <div class="selector selector-big" data-value="carry"><i class="fa fa-role fa-role-carry"></i>Carry</div>
-                    <div class="selector selector-big" data-value="mid"><i class="fa fa-role fa-role-mid"></i>Mid lane</div>
-                    <div class="selector selector-big" data-value="offlane"><i class="fa fa-role fa-role-offlane"></i>Offlane</div>
-                    <div class="selector selector-big" data-value="support"><i class="fa fa-role fa-role-support"></i>Support</div>
+                    <div class="selector selector-big" data-value="carry">
+                        <i class="fa fa-role fa-role-carry"></i>Carry</div>
+                    <div class="selector selector-big" data-value="mid">
+                        <i class="fa fa-role fa-role-mid"></i>Mid lane</div>
+                    <div class="selector selector-big" data-value="offlane">
+                        <i class="fa fa-role fa-role-offlane"></i>Offlane</div>
+                    <div class="selector selector-big" data-value="support">
+                        <i class="fa fa-role fa-role-support"></i>Support</div>
                 </div>
             </div>
             <div class="selector-row">
@@ -84,11 +88,23 @@
                 <div class="hero-section__container" id="demo_int"></div>
             </div>
         </div>
+        <div id="herohover">
+            <img id="herohover_img" src="http://cdn.dota2.com/apps/dota2/images/heroes/bloodseeker_lg.png" alt="">
+            <div class="herohover_name">
+                <span id="herohover_name"></span>
+            </div>
+            <i class="herohover-favorite-star fas fa-star"></i>
+            <i class="herohover-favorite-star far fa-star"></i>
+            <div class="herohover-shadow"></div>
+            <div id="herohover_roles"></div>
+            <img id="herohover_attr" src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_str.png" alt="">
+        </div>
         <p>Tired of panicking having only 30 seconds to pick and being overwhelmed by 115 possible choices? The Dota 2 Hero
             Role Picker is here to help you! Narrow your choice variation to most suitable heroes in just a couple of clicks.
             Feel free to filter heroes by their farm dependency, attack range and main damage type. Add specific heroes to
             favorites by clicking on their portraits, then click "FAVORITES" button to check them out. Use optional filters
             such as Initiator or Pusher if needed.</p>
+        <div class="version">v0.4.0</div>
     </div>
 
     <script src="js/main.js"></script>

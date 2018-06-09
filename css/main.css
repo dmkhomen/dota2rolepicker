@@ -84,7 +84,7 @@ body {
     cursor: pointer;
 }
 
-.favorite img {
+.hero.favorite img {
     border: 1px solid goldenrod;
 }
 
@@ -97,7 +97,7 @@ body {
     color: goldenrod;
 }
 
-.favorite .favorite-star.fas {
+.hero.favorite .favorite-star.fas {
     opacity: 1;
 }
 
@@ -193,18 +193,145 @@ p {
 .fa-role-carry:before {
     content: "\e906";
 }
+
 .fa-role-mid:before {
     content: "\e901";
 }
+
 .fa-role-offlane:before {
     content: "\e902";
 }
+
 .fa-role-support:before {
     content: "\e905";
 }
+
+.fa-role-jungler:before {
+    content: "\e900";
+}
+
 .selector-favorites i {
     font-size: 14px;
     font-weight: 600;
     position: relative;
     top: -2px;
+}
+
+#herohover {
+    width: 180px;
+    border-radius: 2px;
+    background-image: url('../img/asfalt-dark.png');
+    position: fixed;
+    left: -100%;
+    top: -100%;
+    cursor: pointer;
+}
+
+#herohover_img {
+    max-width: 100%;
+    border-radius: 2px;
+}
+
+.herohover_name {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    right: 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    z-index: 10;
+}
+
+#herohover_name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    color: #eee;
+    line-height: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.version {
+    color: #999;
+    font-size: 12px;
+}
+
+.herohover-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 20px #000000;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 35px, rgba(0, 0, 0, 0) 65px, rgba(0, 0, 0, 0.9) 100%);
+}
+
+#herohover_roles {
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    z-index: 10;
+}
+
+#herohover .fa-role {
+    font-size: 16px;
+    text-shadow: 1px 1px 0px black;
+}
+
+#herohover .fa-role-carry {
+    color: #ff6666;
+}
+
+#herohover .fa-role-mid {
+    color: #b970ca;
+}
+
+#herohover .fa-role-offlane {
+    color: #fda55a;
+}
+
+#herohover .fa-role-support {
+    color: #ffda6e;
+}
+
+#herohover .fa-role-jungler {
+    color: #75946b;
+}
+
+#herohover.favorite .herohover-shadow {
+    box-shadow: 0 0 20px gold;
+}
+
+.herohover-favorite-star {
+    position: absolute;
+    right: 7px;
+    bottom: 8px;
+    font-size: 13px;
+    opacity: 0;
+    color: #eee;
+    z-index: 10;
+}
+
+.herohover-favorite-star.far {
+    opacity: 0.7;
+}
+
+#herohover.favorite .herohover-favorite-star {
+    opacity: 1;
+    color: goldenrod;
+}
+
+#herohover_attr {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 6px;
+    bottom: 6px;
+    z-index: 10;
 }

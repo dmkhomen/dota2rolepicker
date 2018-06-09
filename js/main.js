@@ -102,32 +102,17 @@ function getHeroesCallback(data) {
             }
         }
         totalFavorites = favorites.length;
-        console.log(totalFavorites);
+        // console.log(totalFavorites);
         totalFavoritesSpan.innerHTML = totalFavorites;
     }
 
     //update favorites and cookie on hero clicking
     for (var i = 0; i < items.length; i++) {
-        items[i].addEventListener('click', function () {
-            var id = this.getAttribute("data-id");
-            if (!hasInside(favorites, id)) {
-                favorites.push(id);
-                this.classList.add("favorite");
-            } else {
-                var index = favorites.indexOf(id);
-                favorites.splice(index, 1);
-                this.classList.remove("favorite");
-            }
-            totalFavorites = favorites.length;
-            totalFavoritesSpan.innerHTML = totalFavorites;
-            var favoritesCookie = JSON.stringify(favorites);
-            setCookie("favs", favoritesCookie, 3650);
-        }, false);
         items[i].addEventListener('click', showHeroes, false);
+        items[i].addEventListener('mouseover', showHeroIdentity, false);
     }
 
     var selectors = document.getElementsByClassName("selector");
-
     var favoritesToggled = false;
     var featuresSelected = [];
 
@@ -186,4 +171,97 @@ function getHeroesCallback(data) {
             }
         }
     }
+
+    var heroHover = document.getElementById("herohover");
+    var heroHoverName = document.getElementById("herohover_name");
+    var heroHoverAttribute = document.getElementById("herohover_attr");
+    var heroHoverImage = document.getElementById("herohover_img");
+    var heroHoverRoles = document.getElementById("herohover_roles");
+
+    function showHeroIdentity() {
+
+        var systemName, name, attribute, features;
+        var id = this.getAttribute("data-id");
+
+        if (hasInside(favorites, id)) {
+            // console.log('has to be fav');
+            heroHover.classList.add("favorite");
+        } else {
+            heroHover.classList.remove("favorite");
+        }
+
+        for (var i = 0; i < heroes.length; i++) {
+            if (heroes[i].id == id) {
+
+                systemName = heroes[i].name;
+                name = heroes[i].localized_name;
+                attribute = heroes[i].attribute;
+                features = heroes[i].features;
+            }
+        }
+        heroHoverName.innerHTML = name;
+        heroHover.setAttribute("data-id", id);
+        heroHoverAttribute.setAttribute("src", "img/hero_" + attribute + ".png")
+        
+        var rolesText = '';
+        for (var i = 0; i < features.length; i++) {
+            switch (features[i]) {
+                case "carry":
+                case "mid":
+                case "offlane":
+                case "support":
+                case "jungler":
+                    rolesText += '<i class="fa fa-role fa-role-' + features[i] + '"></i>';
+                    break;
+            }
+        }
+        heroHoverImage.src = "http://cdn.dota2.com/apps/dota2/images/heroes/" + systemName.substr(14, systemName.length) + "_lg.png";
+        heroHoverRoles.innerHTML = rolesText;
+
+        var top = this.offsetTop;
+        var left = this.offsetLeft;
+        moveHeroHover(top, left);
+        
+    }
+
+    function moveHeroHover(top, left) {
+        heroHover.style.left = left - 90 + 48.5 + 'px';
+        heroHover.style.top = top - 45 + 27 + 'px';
+    }
+
+    heroHover.addEventListener('mouseleave', function () {
+        this.style.left = '-100%';
+        this.style.top = '-100%';
+    }, false);
+
+    heroHover.addEventListener('click', function () {
+
+        var id = this.getAttribute("data-id");
+
+        if (!hasInside(favorites, id)) {
+            favorites.push(id);
+            for (var i = 0; i < items.length; i++) {
+                if (items[i].getAttribute("data-id") == id) {
+                    items[i].classList.add("favorite");
+                    this.classList.add("favorite");
+                }
+            }
+        } else {
+            var index = favorites.indexOf(id);
+            favorites.splice(index, 1);
+            for (var i = 0; i < items.length; i++) {
+                if (items[i].getAttribute("data-id") == id) {
+                    items[i].classList.remove("favorite");
+                    this.classList.remove("favorite");
+                }
+            }
+        }
+        totalFavorites = favorites.length;
+        totalFavoritesSpan.innerHTML = totalFavorites;
+        var favoritesCookie = JSON.stringify(favorites);
+        setCookie("favs", favoritesCookie, 3650);
+        showHeroes();
+
+    }, false);
+
 }
