@@ -31,14 +31,14 @@
         "id": 5,
         "attribute": "int",
         "features": ["support", "ranged", "magical", "aoesplash", "disabler"],
-        "localized_name": "CrystalMaiden"
+        "localized_name": "Crystal Maiden"
     },
     {
         "name": "npc_dota_hero_drow_ranger",
         "id": 6,
         "attribute": "agi",
         "features": ["carry", "ranged", "physical", "aoesplash"],
-        "localized_name": "DrowRanger"
+        "localized_name": "Drow Ranger"
     },
     {
         "name": "npc_dota_hero_earthshaker",
@@ -66,7 +66,7 @@
         "id": 11,
         "attribute": "agi",
         "features": ["mid", "ranged", "physical", "magical", "aoesplash", "nuker"],
-        "localized_name": "ShadowFiend"
+        "localized_name": "Shadow Fiend"
     },
     {
         "name": "npc_dota_hero_morphling",
@@ -80,7 +80,7 @@
         "id": 12,
         "attribute": "agi",
         "features": ["carry", "melee", "physical"],
-        "localized_name": "PhantomLancer"
+        "localized_name": "Phantom Lancer"
     },
     {
         "name": "npc_dota_hero_puck",
@@ -108,14 +108,14 @@
         "id": 16,
         "attribute": "str",
         "features": ["offlane", "support", "jungler", "melee", "magical", "aoesplash", "roamer", "initiator", "disabler"],
-        "localized_name": "SandKing"
+        "localized_name": "Sand King"
     },
     {
         "name": "npc_dota_hero_storm_spirit",
         "id": 17,
         "attribute": "int",
         "features": ["mid", "ranged", "physical", "magical", "aoesplash", "nuker"],
-        "localized_name": "StormSpirit"
+        "localized_name": "Storm Spirit"
     },
     {
         "name": "npc_dota_hero_sven",
@@ -136,7 +136,7 @@
         "id": 20,
         "attribute": "agi",
         "features": ["carry", "support", "ranged", "physical", "initiator", "disabler", "saver"],
-        "localized_name": "VengefulSpirit"
+        "localized_name": "Vengeful Spirit"
     },
     {
         "name": "npc_dota_hero_windrunner",
@@ -185,7 +185,7 @@
         "id": 27,
         "attribute": "int",
         "features": ["support", "ranged", "magical", "initiator", "disabler", "nuker", "pusher"],
-        "localized_name": "ShadowShaman"
+        "localized_name": "Shadow Shaman"
     },
     {
         "name": "npc_dota_hero_slardar",
@@ -206,7 +206,7 @@
         "id": 30,
         "attribute": "int",
         "features": ["support", "ranged", "physical", "magical", "aoesplash", "nuker"],
-        "localized_name": "WitchDoctor"
+        "localized_name": "Witch Doctor"
     },
     {
         "name": "npc_dota_hero_riki",
@@ -262,7 +262,7 @@
         "id": 39,
         "attribute": "int",
         "features": ["mid", "offlane", "ranged", "physical", "magical", "aoesplash", "nuker"],
-        "localized_name": "QueenofPain"
+        "localized_name": "Queen of Pain"
     },
     {
         "name": "npc_dota_hero_venomancer",
@@ -276,28 +276,28 @@
         "id": 41,
         "attribute": "agi",
         "features": ["carry", "offlane", "melee", "physical", "magical", "initiator"],
-        "localized_name": "FacelessVoid"
+        "localized_name": "Faceless Void"
     },
     {
         "name": "npc_dota_hero_skeleton_king",
         "id": 42,
         "attribute": "str",
         "features": ["carry", "jungler", "melee", "physical", "initiator", "disabler", "durable", "pusher"],
-        "localized_name": "WraithKing"
+        "localized_name": "Wraith King"
     },
     {
         "name": "npc_dota_hero_death_prophet",
         "id": 43,
         "attribute": "int",
         "features": ["mid", "ranged", "physical", "magical", "pusher"],
-        "localized_name": "DeathProphet"
+        "localized_name": "Death Prophet"
     },
     {
         "name": "npc_dota_hero_phantom_assassin",
         "id": 44,
         "attribute": "agi",
         "features": ["carry", "melee", "physical"],
-        "localized_name": "PhantomAssassin"
+        "localized_name": "Phantom Assassin"
     },
     {
         "name": "npc_dota_hero_pugna",
@@ -311,7 +311,7 @@
         "id": 46,
         "attribute": "agi",
         "features": ["carry", "mid", "ranged", "physical", "aoesplash"],
-        "localized_name": "TemplarAssassin"
+        "localized_name": "Templar Assassin"
     },
     {
         "name": "npc_dota_hero_viper",
@@ -332,7 +332,7 @@
         "id": 49,
         "attribute": "str",
         "features": ["carry", "mid", "offlane", "melee", "ranged", "physical", "aoesplash", "initiator", "disabler", "pusher", "durable"],
-        "localized_name": "DragonKnight"
+        "localized_name": "Dragon Knight"
     },
     {
         "name": "npc_dota_hero_dazzle",
@@ -360,7 +360,7 @@
         "id": 53,
         "attribute": "int",
         "features": ["offlane", "support", "jungler", "ranged", "physical", "roamer", "pusher"],
-        "localized_name": "Nature'sProphet"
+        "localized_name": "Nature's Prophet"
     },
     {
         "name": "npc_dota_hero_life_stealer",
@@ -374,7 +374,7 @@
         "id": 55,
         "attribute": "int",
         "features": ["offlane", "melee", "magical", "aoesplash", "initiator", "jungler"],
-        "localized_name": "DarkSeer"
+        "localized_name": "Dark Seer"
     },
     {
         "name": "npc_dota_hero_clinkz",
@@ -409,7 +409,7 @@
         "id": 60,
         "attribute": "str",
         "features": ["offlane", "support", "melee", "physical", "roamer", "initiator", "disabler", "durable"],
-        "localized_name": "NightStalker"
+        "localized_name": "Night Stalker"
     },
     {
         "name": "npc_dota_hero_broodmother",
@@ -423,7 +423,7 @@
         "id": 62,
         "attribute": "agi",
         "features": ["support", "melee", "physical", "magical", "roamer"],
-        "localized_name": "BountyHunter"
+        "localized_name": "Bounty Hunter"
     },
     {
         "name": "npc_dota_hero_weaver",
@@ -472,7 +472,7 @@
         "id": 68,
         "attribute": "int",
         "features": ["support", "ranged", "magical", "aoesplash"],
-        "localized_name": "AncientApparition"
+        "localized_name": "Ancient Apparition"
     },
     {
         "name": "npc_dota_hero_ursa",
@@ -486,7 +486,7 @@
         "id": 71,
         "attribute": "str",
         "features": ["offlane", "support", "melee", "physical", "roamer", "initiator", "disabler", "durable"],
-        "localized_name": "SpiritBreaker"
+        "localized_name": "Spirit Breaker"
     },
     {
         "name": "npc_dota_hero_gyrocopter",
@@ -521,7 +521,7 @@
         "id": 76,
         "attribute": "int",
         "features": ["carry", "mid", "ranged", "physical", "magical", "nuker", "saver"],
-        "localized_name": "OutworldDevourer"
+        "localized_name": "Outworld Devourer"
     },
     {
         "name": "npc_dota_hero_lycan",
@@ -542,7 +542,7 @@
         "id": 79,
         "attribute": "int",
         "features": ["support", "ranged", "magical", "disabler", "saver"],
-        "localized_name": "ShadowDemon"
+        "localized_name": "Shadow Demon"
     },
     {
         "name": "npc_dota_hero_lone_druid",
@@ -556,7 +556,7 @@
         "id": 81,
         "attribute": "str",
         "features": ["carry", "melee", "physical", "pusher", "disabler", "durable"],
-        "localized_name": "ChaosKnight"
+        "localized_name": "Chaos Knight"
     },
     {
         "name": "npc_dota_hero_meepo",
@@ -570,14 +570,14 @@
         "id": 83,
         "attribute": "str",
         "features": ["support", "melee", "magical", "aoesplash", "roamer", "initiator", "saver"],
-        "localized_name": "TreantProtector"
+        "localized_name": "Treant Protector"
     },
     {
         "name": "npc_dota_hero_ogre_magi",
         "id": 84,
         "attribute": "int",
         "features": ["support", "melee", "magical", "disabler", "nuker", "durable"],
-        "localized_name": "OgreMagi"
+        "localized_name": "Ogre Magi"
     },
     {
         "name": "npc_dota_hero_undying",
@@ -605,21 +605,21 @@
         "id": 88,
         "attribute": "agi",
         "features": ["offlane", "support", "melee", "magical", "roamer", "initiator", "disabler", "nuker"],
-        "localized_name": "NyxAssassin"
+        "localized_name": "Nyx Assassin"
     },
     {
         "name": "npc_dota_hero_naga_siren",
         "id": 89,
         "attribute": "agi",
         "features": ["carry", "support", "melee", "physical", "initiator", "disabler", "pusher", "saver"],
-        "localized_name": "NagaSiren"
+        "localized_name": "Naga Siren"
     },
     {
         "name": "npc_dota_hero_keeper_of_the_light",
         "id": 90,
         "attribute": "int",
         "features": ["support", "ranged", "magical", "aoesplash"],
-        "localized_name": "KeeperoftheLight"
+        "localized_name": "Keeper of the Light"
     },
     {
         "name": "npc_dota_hero_wisp",
@@ -654,14 +654,14 @@
         "id": 95,
         "attribute": "agi",
         "features": ["carry", "jungler", "melee", "ranged", "physical", "pusher"],
-        "localized_name": "TrollWarlord"
+        "localized_name": "Troll Warlord"
     },
     {
         "name": "npc_dota_hero_centaur",
         "id": 96,
         "attribute": "str",
         "features": ["offlane", "melee", "physical", "magical", "aoesplash", "initiator", "disabler", "durable", "jungler"],
-        "localized_name": "CentaurWarrunner"
+        "localized_name": "Centaur Warrunner"
     },
     {
         "name": "npc_dota_hero_magnataur",
@@ -710,28 +710,28 @@
         "id": 103,
         "attribute": "str",
         "features": ["offlane", "support", "melee", "physical", "magical", "aoesplash", "roamer", "initiator"],
-        "localized_name": "ElderTitan"
+        "localized_name": "Elder Titan"
     },
     {
         "name": "npc_dota_hero_legion_commander",
         "id": 104,
         "attribute": "str",
         "features": ["mid", "offlane", "jungler", "melee", "physical", "initiator", "disabler"],
-        "localized_name": "LegionCommander"
+        "localized_name": "Legion Commander"
     },
     {
         "name": "npc_dota_hero_ember_spirit",
         "id": 106,
         "attribute": "agi",
         "features": ["carry", "mid", "melee", "physical", "magical", "aoesplash"],
-        "localized_name": "EmberSpirit"
+        "localized_name": "Ember Spirit"
     },
     {
         "name": "npc_dota_hero_earth_spirit",
         "id": 107,
         "attribute": "str",
         "features": ["support", "melee", "magical", "aoesplash", "roamer", "saver", "disabler"],
-        "localized_name": "EarthSpirit"
+        "localized_name": "Earth Spirit"
     },
     {
         "name": "npc_dota_hero_terrorblade",
@@ -766,14 +766,14 @@
         "id": 112,
         "attribute": "int",
         "features": ["support", "ranged", "magical", "disabler", "saver"],
-        "localized_name": "WinterWyvern"
+        "localized_name": "Winter Wyvern"
     },
     {
         "name": "npc_dota_hero_arc_warden",
         "id": 113,
         "attribute": "agi",
         "features": ["carry", "mid", "ranged", "magical", "physical"],
-        "localized_name": "ArcWarden"
+        "localized_name": "Arc Warden"
     },
     {
         "name": "npc_dota_hero_abyssal_underlord",
@@ -787,7 +787,7 @@
         "id": 114,
         "attribute": "agi",
         "features": ["carry", "support", "melee", "physical", "aoesplash", "roamer"],
-        "localized_name": "MonkeyKing"
+        "localized_name": "Monkey King"
     },
     {
         "name": "npc_dota_hero_pangolier",
@@ -801,6 +801,6 @@
         "id": 119,
         "attribute": "int",
         "features": ["support", "ranged", "physical", "magical", "nuker"],
-        "localized_name": "DarkWillow"
+        "localized_name": "Dark Willow"
     }
 ]
