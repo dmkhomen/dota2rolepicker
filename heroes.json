@@ -793,7 +793,7 @@
         "name": "npc_dota_hero_pangolier",
         "id": 120,
         "attribute": "agi",
-        "features": ["offlane", "melee", "physical", "roamer", "initiator", "nuker"],
+        "features": ["offlane", "support", "melee", "physical", "roamer", "initiator", "nuker"],
         "localized_name": "Pangolier"
     },
     {
