@@ -336,3 +336,6 @@ p {
     bottom: 6px;
     z-index: 10;
 }
+.favorite #herohover_name {
+    color: gold;
+}
