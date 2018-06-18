@@ -142,7 +142,7 @@
         "name": "npc_dota_hero_windrunner",
         "id": 21,
         "attribute": "int",
-        "features": ["mid", "offlane", "ranged", "physical"],
+        "features": ["mid", "offlane", "support", "ranged", "physical"],
         "localized_name": "Windranger"
     },
     {
